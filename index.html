@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>A Murder Puzzle — Personality &amp; Moral Decision-Making</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2'%3E%3Cpath d='M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2'/%3E%3Crect x='9' y='3' width='6' height='4' rx='1'/%3E%3C/svg%3E">
+
+<!-- Social Media Preview Meta Tags -->
+<meta name="description" content="A research study on how personality influences the way people respond to moral dilemmas. All responses are anonymous.">
+
+<!-- Open Graph (Facebook, Messenger, Reddit, LinkedIn, Discord, etc.) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="A Murder Puzzle — How Does Your Personality Affect Moral Decision-Making?">
+<meta property="og:description" content="A research study examining how personality influences the way people respond to moral dilemmas. All responses are anonymous.">
+<!-- IMPORTANT: Replace YOUR-USERNAME and YOUR-REPO below with your actual GitHub Pages URL -->
+<meta property="og:url" content="https://PsychometricLab.github.io/PPS/">
+<meta property="og:image" content="https://PsychometricLab.github.io/PPS/og-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A Murder Puzzle — Personality and Moral Decision-Making">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A Murder Puzzle — How Does Your Personality Affect Moral Decision-Making?">
+<meta name="twitter:description" content="A research study examining how personality influences the way people respond to moral dilemmas. All responses are anonymous.">
+<meta name="twitter:image" content="https://PsychometricLab.github.io/PPS/og-preview.png">
+<script>
+(function(){var v='v='+Math.floor(Date.now()/60000);if(location.search.indexOf(v)===-1){location.replace(location.pathname+'?'+v)}})();
+</script>
+<!-- Zoom is intentionally left enabled (pinch, double-tap, and ctrl/trackpad zoom on all devices). -->
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="Prototypical%20Personality%20Scale_files/css2.css" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--primary:#5B6EE1;--primary-dark:#4A5BCB;--primary-light:rgba(91,110,225,.18);--accent:#C9456A;--bg:#0E1117;--bg-card:#161A22;--bg-card2:#1D222C;--text:#ECEEF3;--text-muted:rgba(205,210,222,.72);--text-light:rgba(165,172,190,.5);--border:rgba(255,255,255,.09);--border-light:rgba(255,255,255,.055);--error:#F87171;--error-bg:rgba(248,113,113,.12);--sel-border:#A07830;--sel-text:#E8B860;--heading:'Fraunces',Georgia,serif;--body:'Source Sans 3',-apple-system,sans-serif;--radius:12px;--radius-lg:20px;--shadow-sm:0 1px 2px rgba(0,0,0,.3);--shadow:0 4px 24px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.06)}
+html{font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:var(--body);color:var(--text);background:var(--bg);min-height:100vh;min-height:100svh;line-height:1.6;overflow-anchor:none}
+#app{overflow-x:hidden;width:100%}
+body.on-results{}
+.hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem 1.5rem 16vh;background:var(--bg);position:relative;overflow-x:hidden;overflow-y:visible}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(74,91,203,.18) 0%,transparent 65%),radial-gradient(ellipse 60% 50% at 85% 100%,rgba(74,91,203,.1) 0%,transparent 60%);pointer-events:none}
+.hero::after{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(255,255,255,.018) 39px,rgba(255,255,255,.018) 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(255,255,255,.018) 39px,rgba(255,255,255,.018) 40px);pointer-events:none}
+.hero-rule{width:40px;height:2px;background:linear-gradient(90deg,transparent,rgba(146,158,230,.6),transparent);margin:0 auto 1.75rem;border-radius:2px}
+.hero-eyebrow{font-family:var(--body);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(146,158,230,.75);margin-bottom:1.4rem}
+.hero-badge{display:none}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
+.hero h1{font-family:var(--heading);font-size:min(5vw,2.2rem);font-weight:700;line-height:1.1;color:#F0EDF8;margin-bottom:1.25rem;white-space:nowrap;letter-spacing:-.02em}
+.hero-divider{width:56px;height:1px;background:linear-gradient(90deg,transparent,rgba(146,158,230,.5),transparent);margin:0 auto 1.5rem;border-radius:1px}
+.hero-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:1.4rem 2rem 1.5rem;max-width:460px;width:100%;backdrop-filter:blur(10px);box-shadow:0 4px 32px rgba(0,0,0,.25),0 0 0 1px rgba(255,255,255,.04),0 0 60px rgba(91,110,225,.05);margin-bottom:.25rem}
+.hero-sub{font-family:'DM Sans',sans-serif;font-size:1rem;color:rgba(216,220,232,.94);max-width:420px;line-height:1.7;font-weight:400;margin-bottom:.5rem}
+.hero-sub:last-child{margin-bottom:0}
+.hero-meta{display:flex;align-items:center;gap:0;margin:2.25rem 0 2.75rem;font-size:.82rem;color:rgba(185,180,215,.88);border:1px solid rgba(255,255,255,.08);border-radius:100px;padding:.5rem .25rem;background:rgba(255,255,255,.03);backdrop-filter:blur(4px)}
+.hero-meta-item{display:flex;align-items:center;gap:6px;padding:.1rem 1.1rem}
+.hero-meta-item+.hero-meta-item{border-left:1px solid rgba(255,255,255,.08)}
+.hero-meta-item svg{width:14px;height:14px;color:rgba(146,158,230,.7);flex-shrink:0}
+.btn-hero{font-family:var(--body);font-size:.95rem;font-weight:600;letter-spacing:.04em;padding:.95rem 2.8rem;border-radius:100px;border:none;cursor:pointer;color:#fff;background:linear-gradient(135deg,#5B6EE1 0%,#4A5BCB 100%);box-shadow:0 0 0 1px rgba(91,110,225,.35),0 4px 20px rgba(74,91,203,.45),0 1px 3px rgba(0,0,0,.4);transition:all .2s ease;position:relative;overflow:hidden}
+.btn-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.1) 0%,transparent 60%);border-radius:inherit}
+.btn-hero:hover{background:linear-gradient(135deg,#7063DC 0%,#5B50CC 100%);box-shadow:0 0 0 1px rgba(112,99,220,.5),0 6px 28px rgba(74,91,203,.55),0 1px 3px rgba(0,0,0,.4);transform:translateY(-1px)}
+.btn-hero:active{transform:translateY(0)}
+.explainer{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem 1.5rem 14vh;background:var(--bg);position:relative}
+.explainer::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(100,86,212,.12) 0%,transparent 60%);pointer-events:none}
+.explainer-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:2.5rem 2rem;max-width:540px;width:100%;box-shadow:var(--shadow);animation:fadeIn .5s ease;position:relative;z-index:1}
+.btn-explainer-back{display:block;margin:1.25rem auto 0;background:transparent;border:none;color:var(--text-light);font-family:var(--body);font-size:.85rem;cursor:pointer;padding:.4rem .8rem;opacity:.7;transition:opacity .15s ease;position:relative;z-index:1}
+.btn-explainer-back:hover{opacity:1;color:var(--primary)}
+.explainer h2{font-family:var(--heading);font-size:1.6rem;font-weight:700;margin-bottom:.5rem;color:var(--text)}
+.explainer-sub{font-family:'DM Sans',sans-serif;font-size:1rem;color:rgba(200,196,230,.92);font-weight:400;line-height:1.65;margin-bottom:2rem}
+.explainer-label{font-family:var(--heading);font-size:1rem;font-weight:600;color:var(--text-muted);margin-bottom:1.25rem;font-style:italic}
+.explainer-demo{margin-bottom:2rem}
+.tri-container{position:relative;padding:0 .5rem}
+.tri-numbers{display:flex;justify-content:space-between;margin-bottom:.6rem;position:relative;z-index:2}
+.tri-num{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:.9rem;color:var(--text-muted);background:rgba(255,255,255,.06);border:2px solid var(--border);opacity:0;animation:numIn .35s ease forwards}
+.tri-num:nth-child(1){animation-delay:.3s}.tri-num:nth-child(2){animation-delay:.45s}.tri-num:nth-child(3){animation-delay:.6s}.tri-num:nth-child(4){animation-delay:.75s}.tri-num:nth-child(5){animation-delay:.9s}
+@keyframes numIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.tri-shape{position:relative;height:28px;margin:0 18px;overflow:hidden;opacity:0;animation:triGrow .8s ease 1.15s forwards}
+@keyframes triGrow{from{opacity:0;clip-path:polygon(0% 100%,0% 100%,0% 100%)}to{opacity:1;clip-path:polygon(0% 100%,100% 100%,100% 0%)}}
+.tri-shape-inner{width:100%;height:100%;background:linear-gradient(90deg,rgba(100,86,212,.25),rgba(100,86,212,.7));border-radius:0 4px 4px 0;clip-path:polygon(0% 100%,100% 100%,100% 0%)}
+.tri-labels{display:flex;margin-top:.6rem}
+.tri-label-l,.tri-label-m,.tri-label-r{font-size:.75rem;font-weight:500;color:var(--text-light);opacity:0;animation:numIn .35s ease 1.35s forwards;flex:1}
+.tri-label-l{text-align:left}
+.tri-label-m{text-align:center}
+.tri-label-r{text-align:right;color:var(--primary);font-weight:600}
+.explainer-note{font-size:.88rem;color:var(--text-muted);line-height:1.6;margin:0 0 1.25rem}
+.explainer-note strong{color:var(--text);font-weight:600}
+.survey-shell{max-width:920px;margin:0 auto;padding:0 1.5rem 14vh;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;background:var(--bg)}
+.progress-container{padding:1.25rem 0 .75rem;flex-shrink:0;border-bottom:1px solid var(--border-light)}
+.progress-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:.6rem}
+.progress-title{font-family:var(--heading);font-size:1.1rem;font-weight:700;color:var(--text);letter-spacing:-.02em;text-transform:none}
+.progress-pct{font-size:.78rem;font-weight:600;color:rgba(146,158,230,.8);letter-spacing:.04em}
+.progress-track{height:4px;background:rgba(255,255,255,.08);border-radius:100px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,#5B6EE1,#7C8AEA);border-radius:100px;transition:width .6s cubic-bezier(.25,.46,.45,.94)}
+.extent-header{font-family:var(--body);font-size:1.6rem;font-weight:600;text-align:center;color:var(--text);margin:0 0 .15rem;flex-shrink:0}
+.extent-header.hidden{display:none}
+.extent-header.first-load{opacity:0;animation:fadeIn .4s ease .5s forwards}
+.slide-area{flex:1;display:flex;flex-direction:column;justify-content:center;margin-top:15%}
+.content-anchor{position:relative}
+.text-section{position:absolute;bottom:100%;left:0;right:0;padding-bottom:.5rem}
+.scale-section{}
+.question-slide{overflow:hidden}
+.question-slide.first-load{opacity:0;animation:fadeIn .4s ease 1s forwards}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes slideInRight{from{transform:translateX(80px);opacity:0}to{transform:translateX(0);opacity:1}}
+@keyframes slideInLeft{from{transform:translateX(-80px);opacity:0}to{transform:translateX(0);opacity:1}}
+.slide-fwd{animation:slideInRight .25s ease}
+.slide-bwd{animation:slideInLeft .25s ease}
+.item-question{font-family:var(--body);font-size:1.1rem;font-weight:500;line-height:1.5;color:var(--text);text-align:center;margin-bottom:.75rem;text-wrap:balance}
+.item-question-special{font-family:var(--body);font-size:.95rem;font-weight:400;line-height:1.5;color:var(--text-muted);text-align:center;margin-bottom:.35rem;font-style:italic;text-wrap:balance}
+.item-question-special-main{font-family:var(--body);font-size:1.1rem;font-weight:500;line-height:1.5;color:var(--text);text-align:center;margin-bottom:.75rem;text-wrap:balance}
+.scale-wrap{display:flex;flex-direction:column;gap:6px;max-width:400px;margin:0 auto;width:100%}
+.scale-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:.7rem 1.25rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg-card);cursor:pointer;transition:border-color .15s,background .15s;-webkit-tap-highlight-color:transparent;user-select:none;position:relative;overflow:hidden;z-index:0}
+.scale-btn::before{content:'';position:absolute;top:0;left:0;height:100%;width:0;z-index:-1;border-radius:inherit;transition:width .4s cubic-bezier(.25,.46,.45,.94)}
+.scale-btn[data-value="0"]::before{background:rgba(100,86,212,.15)}
+.scale-btn[data-value="1"]::before{background:linear-gradient(90deg,rgba(100,86,212,.1),rgba(100,86,212,.25))}
+.scale-btn[data-value="2"]::before{background:linear-gradient(90deg,rgba(100,86,212,.1),rgba(100,86,212,.35))}
+.scale-btn[data-value="3"]::before{background:linear-gradient(90deg,rgba(100,86,212,.1),rgba(100,86,212,.45))}
+.scale-btn[data-value="4"]::before{background:linear-gradient(90deg,rgba(100,86,212,.1),rgba(100,86,212,.55))}
+@media (hover:hover){.scale-btn:hover{border-color:rgba(146,158,230,.4);background:rgba(255,255,255,.04)}}
+.scale-btn.selected{border-color:rgba(224,184,96,.5);background:var(--bg-card)}
+.scale-btn.selected[data-value="0"]::before{width:2%}
+.scale-btn.selected[data-value="1"]::before{width:25%}
+.scale-btn.selected[data-value="2"]::before{width:50%}
+.scale-btn.selected[data-value="3"]::before{width:75%}
+.scale-btn.selected[data-value="4"]::before{width:100%}
+.scale-num{font-weight:600;font-size:.95rem;color:var(--text);transition:color .15s}
+.scale-lbl{font-size:.95rem;font-weight:400;color:var(--text-muted);line-height:1.3;transition:color .15s}
+.scale-btn.selected .scale-num{color:#E8C870}
+.scale-btn.selected .scale-lbl{color:#C8A850}
+.nav-row{display:flex;justify-content:space-between;align-items:center;padding:1rem 0 1.5rem;flex-shrink:0;gap:1rem;border-top:1px solid var(--border-light)}
+.btn-nav{font-family:var(--body);font-size:.92rem;font-weight:600;padding:.8rem 2rem;border-radius:100px;cursor:pointer;border:none;transition:all .15s ease}
+.btn-next{background:linear-gradient(135deg,#5B6EE1 0%,#4A5BCB 100%);color:#fff;box-shadow:0 0 0 1px rgba(91,110,225,.35),0 2px 12px rgba(74,91,203,.4)}
+.btn-next:hover{background:linear-gradient(135deg,#7063DC 0%,#5B50CC 100%);transform:translateY(-1px);box-shadow:0 0 0 1px rgba(112,99,220,.5),0 4px 18px rgba(74,91,203,.5)}.btn-next:active{transform:translateY(0)}
+.btn-back{background:transparent;color:var(--text-muted);border:1px solid var(--border)}
+.btn-back:hover{background:rgba(255,255,255,.05);color:var(--text);border-color:rgba(255,255,255,.2)}
+.error-msg{background:var(--error-bg);color:var(--error);padding:.65rem 1rem;border-radius:var(--radius);font-size:.82rem;font-weight:500;margin-bottom:.5rem;display:block;visibility:hidden;border:1px solid rgba(248,113,113,.2);text-align:center}
+.error-msg.visible{visibility:visible}
+.results{max-width:640px;margin:0 auto;padding:2.5rem 1.5rem 4rem;animation:fadeIn .5s ease}
+.results h1{font-family:var(--heading);font-size:2rem;font-weight:700;text-align:center;margin-bottom:.5rem;color:var(--text)}
+.results-sub{text-align:center;font-size:1rem;color:var(--text-muted);font-weight:300;margin-bottom:2.5rem;line-height:1.6}
+.dim-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem 1.75rem;margin-bottom:.85rem;box-shadow:var(--shadow-sm)}
+.dim-header{display:flex;justify-content:space-between;align-items:flex-start;gap:.85rem;margin-bottom:.4rem}
+.dim-name{font-family:var(--heading);font-size:1.05rem;font-weight:600;line-height:1.3;text-wrap:balance;flex:1;min-width:0}
+.dim-pct{font-size:1.05rem;font-weight:700;color:var(--primary);white-space:nowrap;flex-shrink:0;line-height:1.3}
+.dim-desc{font-size:.78rem;color:var(--text-muted);line-height:1.5;margin-bottom:.85rem}
+.dim-bar-track{height:6px;background:rgba(255,255,255,.07);border-radius:100px;overflow:hidden}
+.dim-bar-fill{height:100%;border-radius:100px;transition:width 1.2s cubic-bezier(.25,.46,.45,.94)}
+.dim-bar-fd{background:linear-gradient(90deg,#5B4DC7,#7B6FE0)}
+.dim-bar-im{background:linear-gradient(90deg,#E8567F,#F08BA5)}
+.dim-bar-cr{background:linear-gradient(90deg,#8B5CF6,#A78BFA)}
+.dim-bar-iss{background:linear-gradient(90deg,#D97B2B,#F0A854)}
+.dim-bar-iu{background:linear-gradient(90deg,#0EA5E9,#67D4F8)}
+.dim-bar-as{background:linear-gradient(90deg,#DC2626,#F87171)}
+.submitting-overlay{display:none;position:fixed;inset:0;background:rgba(12,18,32,.92);backdrop-filter:blur(8px);z-index:1000;align-items:center;justify-content:center;flex-direction:column}
+.submitting-overlay.visible{display:flex}
+.spinner{width:40px;height:40px;border:2px solid rgba(255,255,255,.1);border-top-color:rgba(146,158,230,.8);border-radius:50%;animation:spin .75s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.spinner-text{margin-top:1rem;color:var(--text-muted);font-size:.9rem;font-weight:400;letter-spacing:.04em}
+@media(max-width:640px){
+  .hero{padding:1.5rem 1.25rem}
+  .hero h1{white-space:nowrap}.hero-sub{font-size:1rem}
+  .hero-eyebrow{font-size:.68rem;margin-bottom:1.2rem}
+  .hero-rule{margin-bottom:1.2rem}
+  .hero-meta{flex-direction:column;gap:0;border-radius:16px;padding:.25rem 0;margin:1.75rem 0 2.25rem}
+  .hero-meta-item{padding:.5rem 1.25rem;width:100%;justify-content:center}
+  .hero-meta-item+.hero-meta-item{border-left:none;border-top:1px solid rgba(255,255,255,.08)}
+  .btn-hero{padding:.9rem 2.2rem;font-size:.95rem;width:100%;max-width:320px}
+  .survey-shell{padding:0 .75rem 0}
+  .extent-header{font-size:1.4rem}
+  .item-question{font-size:1.05rem}
+  .scale-btn{padding:.6rem 1rem}
+  .scale-num{font-size:.88rem}.scale-lbl{font-size:.88rem}
+  .btn-nav{padding:.7rem 1.5rem;font-size:.85rem}
+  .explainer{padding:1.5rem 1.25rem}
+  .explainer-card{padding:1.75rem 1.25rem}
+  .tri-num{width:30px;height:30px;font-size:.78rem}
+  .results{padding:1.5rem 1rem 3rem}
+  .results h1{font-size:1.6rem}
+  .dim-card{padding:1rem .9rem}
+  .dim-header{gap:.6rem;margin-bottom:.35rem}
+  .dim-name{font-size:.92rem;line-height:1.25}
+  .dim-pct{font-size:.92rem}
+  .dim-desc{font-size:.76rem;line-height:1.45;margin-bottom:.7rem}
+}
+@media(max-width:380px){
+  .hero h1{font-size:1.6rem}
+  .extent-header{font-size:1.2rem}
+  .item-question{font-size:.95rem}
+  .scale-btn{padding:.5rem .75rem}
+  .scale-lbl{font-size:.82rem}
+  .tri-num{width:26px;height:26px;font-size:.72rem}
+  .dim-card{padding:.9rem .8rem}
+  .dim-name{font-size:.88rem}
+  .dim-pct{font-size:.88rem}
+  .core-group{padding:1rem .7rem .7rem}
+}
+
+/* Likert colors */
+.likert .scale-btn::before{display:none}
+/* Uniform gold selection + green hover (no per-option colour bias) */
+.likert .scale-btn.selected{border-color:rgba(224,184,96,.55);background:var(--bg-card)}
+.likert .scale-btn.selected .scale-lbl{color:#E8C870}
+@media(hover:hover){.likert .scale-btn:hover{border-color:rgba(124,227,166,.45);background:rgba(255,255,255,.04)}.likert .scale-btn:hover .scale-lbl{color:#7CE3A6}}
+.likert .scale-btn:focus-visible{outline:none}
+.likert .scale-btn:focus-visible .scale-lbl{color:#7CE3A6}
+
+.demo-screen{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem 1.5rem 14vh;background:var(--bg);position:relative}
+.demo-screen::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(100,86,212,.1) 0%,transparent 60%);pointer-events:none}
+.demo-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:2.5rem 2rem;max-width:500px;width:100%;box-shadow:var(--shadow);animation:fadeIn .5s ease;position:relative;z-index:1}
+.demo-card h2{font-family:var(--heading);font-size:1.6rem;font-weight:700;margin-bottom:.4rem;text-align:center;color:var(--text)}
+.demo-card .demo-sub{font-size:1rem;color:var(--text-muted);font-weight:300;line-height:1.65;margin-bottom:2rem;text-align:center}
+.demo-field{margin-bottom:1.5rem}
+.demo-field label{display:block;font-family:var(--body);font-size:.88rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.45rem}
+.demo-field label .optional{font-weight:400;color:var(--text-light);font-size:.82rem}
+.demo-field input[type="number"],.demo-field select,.demo-field textarea{width:100%;font-family:var(--body);font-size:1rem;padding:.7rem 1rem;border:1px solid var(--border);border-radius:var(--radius);background:rgba(255,255,255,.04);color:var(--text);transition:border-color .15s;outline:none;-webkit-appearance:none;-moz-appearance:none;appearance:none}
+.demo-field input[type="number"]::placeholder{color:var(--text-light)}
+.demo-field select option{background:#1A2540;color:var(--text)}
+.demo-checkbox-field{display:flex;align-items:flex-start;gap:.7rem;margin-bottom:.85rem;cursor:pointer}
+.demo-checkbox-field input[type="checkbox"]{margin-top:.15rem;width:20px;height:20px;flex-shrink:0;cursor:pointer;accent-color:var(--primary)}
+.demo-checkbox-field label{font-size:.9rem;color:var(--text-muted);cursor:pointer;line-height:1.4;font-weight:400;flex:1}
+.demo-field input[type="number"]:focus,.demo-field select:focus,.demo-field textarea:focus{border-color:rgba(146,158,230,.5);background:rgba(255,255,255,.06)}
+.demo-field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23A09DB5' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;padding-right:2.5rem}
+.demo-field textarea{resize:vertical;min-height:80px;line-height:1.5}
+.demo-field input[type="number"]{-moz-appearance:textfield}
+.demo-field input[type="number"]::-webkit-outer-spin-button,.demo-field input[type="number"]::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.demo-error{background:var(--error-bg);color:var(--error);padding:.65rem 1rem;border-radius:var(--radius);font-size:.82rem;font-weight:500;margin-bottom:1rem;display:none;border:1px solid rgba(248,113,113,.2);text-align:center}
+.demo-error.visible{display:block}
+.demo-submit{width:100%;font-family:var(--body);font-size:1rem;font-weight:600;letter-spacing:.04em;padding:1rem;border-radius:100px;border:none;cursor:pointer;color:#fff;background:linear-gradient(135deg,#5B6EE1 0%,#4A5BCB 100%);box-shadow:0 0 0 1px rgba(91,110,225,.35),0 4px 20px rgba(74,91,203,.4);transition:all .2s ease;margin-top:.5rem;position:relative;overflow:hidden}
+.demo-submit::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.1) 0%,transparent 60%);border-radius:inherit}
+.demo-submit:hover{background:linear-gradient(135deg,#7063DC 0%,#5B50CC 100%);box-shadow:0 0 0 1px rgba(112,99,220,.5),0 6px 28px rgba(74,91,203,.5);transform:translateY(-1px)}
+.demo-submit:active{transform:translateY(0)}
+.demo-back{display:block;margin:.85rem auto 0;padding:.5rem 1.25rem;background:none;border:none;font-family:var(--body);font-size:.92rem;font-weight:500;color:var(--text-muted);cursor:pointer;border-radius:100px}
+.demo-back:hover{color:var(--text);background:rgba(0,0,0,.04)}
+@media(max-width:640px){
+  .demo-card{padding:1.75rem 1.25rem}
+  .demo-card h2{font-size:1.35rem}
+}
+
+.core-group{position:relative;border:1px solid rgba(232,184,96,.16);border-radius:var(--radius-lg);padding:1.25rem 1rem .9rem;margin-bottom:.85rem;background:linear-gradient(180deg,rgba(232,184,96,.04),rgba(232,184,96,0))}
+.core-group .dim-card{margin-bottom:.6rem}
+.core-group .dim-card:last-child{margin-bottom:0}
+.core-label{font-family:var(--heading);font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(232,184,96,.85);text-align:center;margin-bottom:.85rem}
+.btn-compare{display:block;margin:2rem auto .25rem;font-family:var(--body);font-size:1rem;font-weight:600;letter-spacing:.01em;padding:1rem 2rem;border-radius:100px;border:1.5px solid rgba(232,184,96,.55);background:linear-gradient(135deg,rgba(232,184,96,.22),rgba(232,184,96,.08));color:#FFE9BD;cursor:pointer;transition:all .2s ease;width:100%;max-width:420px;box-shadow:0 4px 20px rgba(232,184,96,.12)}
+.btn-compare:hover{background:linear-gradient(135deg,rgba(232,184,96,.32),rgba(232,184,96,.14));border-color:rgba(232,184,96,.75);transform:translateY(-1px);box-shadow:0 6px 24px rgba(232,184,96,.2)}
+.btn-compare:active{transform:translateY(0)}
+.compare-page{max-width:640px;margin:0 auto;padding:2rem 1.25rem 4rem;animation:fadeIn .5s ease}
+.compare-page h1{font-family:var(--heading);font-size:1.7rem;font-weight:700;text-align:center;margin-bottom:.5rem;color:var(--text)}
+.compare-sub{text-align:center;font-size:.95rem;color:var(--text-muted);font-weight:300;margin-bottom:2rem;line-height:1.55}
+.chart-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.4rem 1.1rem 1.1rem;margin-bottom:1rem;box-shadow:var(--shadow-sm)}
+.chart-title{font-family:var(--heading);font-size:1rem;font-weight:600;color:var(--text);margin-bottom:.85rem;line-height:1.3}
+.chart-svg{width:100%;height:auto;display:block;overflow:visible}
+.chart-callout{margin-top:.75rem;padding:.65rem .85rem;background:rgba(255,255,255,.03);border:1px solid var(--border-light);border-radius:10px;font-size:.85rem;line-height:1.45}
+.chart-score{color:var(--text);font-weight:600}
+.chart-pct{color:#E8B860;font-weight:700}
+.btn-back-results{display:block;margin:0 auto 1.5rem;background:transparent;border:1px solid var(--border);color:var(--text-muted);font-family:var(--body);font-size:.85rem;cursor:pointer;padding:.55rem 1.2rem;border-radius:100px;transition:all .15s ease}
+.btn-back-results:hover{background:rgba(255,255,255,.04);color:var(--text);border-color:rgba(255,255,255,.2)}
+@media(max-width:640px){
+  .compare-page{padding:1.25rem .75rem 3rem}
+  .compare-page h1{font-size:1.4rem}
+  .chart-card{padding:1.1rem .75rem .85rem}
+  .chart-title{font-size:.92rem}
+  .chart-callout{font-size:.8rem}
+  .core-label{font-size:.72rem}
+}
+
+.psy-page{max-width:760px;margin:0 auto;padding:2rem 1.25rem 4rem;animation:fadeIn .5s ease}
+.psy-page h1{font-family:var(--heading);font-size:1.7rem;font-weight:700;text-align:center;margin-bottom:.5rem;color:var(--text)}
+.psy-h2{font-family:var(--heading);font-size:1.15rem;font-weight:600;color:var(--text);margin:2rem 0 .35rem;border-bottom:1px solid var(--border-light);padding-bottom:.4rem}
+.psy-h3{font-family:var(--heading);font-size:.95rem;font-weight:600;color:rgba(220,215,235,.92);margin:1.25rem 0 .5rem}
+.psy-note{font-size:.85rem;color:var(--text-muted);font-weight:300;line-height:1.5;margin-bottom:.75rem}
+.psy-note em{font-style:italic;color:rgba(220,215,235,.85)}
+.psy-note-lg{font-size:.95rem;color:var(--text-muted);font-weight:300;line-height:1.55;margin-bottom:1rem}
+.irt-legend-list{list-style:none;margin:.1rem 0 .9rem;padding:0;font-size:.85rem;color:var(--text-muted);font-weight:300;line-height:1.6}
+.irt-legend-list li{padding:.05rem 0}
+.theta-glyph{font-family:Cambria,'Times New Roman',Georgia,serif;font-style:italic}
+.psy-table{width:100%;border-collapse:collapse;margin-bottom:1rem;font-family:var(--body);font-size:.85rem;background:rgba(255,255,255,.02);border:1px solid var(--border-light);border-radius:8px;overflow:hidden}
+.psy-table thead th{background:rgba(255,255,255,.04);color:rgba(220,215,235,.85);font-weight:600;text-align:left;padding:.55rem .7rem;font-size:.8rem;letter-spacing:.02em;border-bottom:1px solid var(--border-light)}
+.psy-table tbody td{padding:.5rem .7rem;border-bottom:1px solid rgba(255,255,255,.04);color:var(--text);vertical-align:top}
+.psy-table tbody tr:last-child td{border-bottom:none}
+.psy-table tbody tr:hover{background:rgba(255,255,255,.02)}
+.psy-table-compact{font-size:.78rem}
+.psy-table-compact th,.psy-table-compact td{padding:.35rem .5rem}
+.btn-psychometrics{display:block;margin:1rem auto .25rem;font-family:var(--body);font-size:1rem;font-weight:600;letter-spacing:.01em;padding:1rem 2rem;border-radius:100px;border:1.5px solid rgba(232,184,96,.55);background:linear-gradient(135deg,rgba(232,184,96,.22),rgba(232,184,96,.08));color:#FFE9BD;cursor:pointer;transition:all .2s ease;width:100%;max-width:420px;box-shadow:0 4px 20px rgba(232,184,96,.12)}
+.btn-psychometrics:hover{background:linear-gradient(135deg,rgba(232,184,96,.32),rgba(232,184,96,.14));border-color:rgba(232,184,96,.75);transform:translateY(-1px);box-shadow:0 6px 24px rgba(232,184,96,.2)}
+@media(max-width:640px){
+  .psy-page{padding:1.25rem .65rem 3rem}
+  .psy-page h1{font-size:1.4rem}
+  .psy-h2{font-size:1rem}
+  .psy-h3{font-size:.88rem}
+  .psy-table{font-size:.78rem}
+  .psy-table thead th{padding:.4rem .45rem;font-size:.72rem}
+  .psy-table tbody td{padding:.4rem .45rem}
+  .psy-table-compact{font-size:.7rem}
+  .psy-table-compact th,.psy-table-compact td{padding:.3rem .35rem}
+}
+
+.btn-back-bottom{display:block;margin:1.75rem auto 0;font-family:var(--body);font-size:.95rem;font-weight:600;padding:.85rem 1.75rem;border-radius:100px;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.04);color:#E8E4F4;cursor:pointer;transition:all .2s ease;width:100%;max-width:420px}
+.btn-back-bottom:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.4);transform:translateY(-1px)}
+.btn-hub{display:block;margin:.85rem auto;font-family:var(--body);font-size:1.05rem;font-weight:600;letter-spacing:.01em;padding:1.1rem 1.5rem;border-radius:14px;border:1.5px solid rgba(155,141,255,.4);background:linear-gradient(135deg,rgba(123,111,224,.16),rgba(123,111,224,.05));color:#E0D9FF;cursor:pointer;transition:all .2s ease;width:100%;max-width:480px;text-align:center;box-shadow:0 4px 18px rgba(123,111,224,.1)}
+.btn-hub:hover{background:linear-gradient(135deg,rgba(123,111,224,.28),rgba(123,111,224,.14));border-color:rgba(155,141,255,.7);transform:translateY(-1px);box-shadow:0 6px 24px rgba(123,111,224,.2)}
+.btn-hub-desc{font-size:.8rem;font-weight:400;color:var(--text-muted);margin-top:.3rem;letter-spacing:0;text-transform:none}
+.psy-hub{max-width:520px;margin:0 auto;padding:2.5rem 1.25rem 4rem;animation:fadeIn .5s ease;text-align:center}
+.psy-hub h1{font-family:var(--heading);font-size:1.7rem;font-weight:700;margin-bottom:.5rem;color:var(--text)}
+.psy-hub-sub{font-size:.95rem;color:var(--text-muted);font-weight:300;margin-bottom:2rem;line-height:1.55}
+.psy-hub-text{margin:1.75rem auto 1.25rem;max-width:480px;text-align:left;font-size:.85rem;color:var(--text-muted);line-height:1.65;font-weight:300}
+.psy-hub-text p{margin-bottom:1rem}
+.psy-hub-text p:last-child{margin-bottom:0}
+.cfa-diagram-card{background:rgba(255,255,255,.02);border:1px solid var(--border-light);border-radius:10px;padding:1rem .75rem;margin:1rem 0 1.25rem;overflow-x:auto}
+.cfa-diagram-card svg{display:block;width:100%;height:auto;max-width:100%}
+.cfa-diagram-title{font-family:var(--heading);font-size:.95rem;font-weight:600;color:rgba(220,215,235,.92);margin-bottom:.5rem;text-align:center}
+.cfa-estimator-note{font-size:.78rem;color:var(--text-muted);font-style:italic;margin-bottom:.85rem;text-align:center}
+
+.irt-item{background:rgba(255,255,255,.025);border:1px solid var(--border-light);border-radius:10px;padding:1rem .9rem .85rem;margin-bottom:.85rem}
+.irt-item-text{font-family:var(--body);font-size:.92rem;font-weight:500;color:var(--text);line-height:1.4;margin-bottom:.4rem}
+.irt-item-params{margin-bottom:.6rem;margin-top:.1rem;line-height:1.45;color:var(--text-muted);overflow:hidden}
+.irt-item-params::after{content:"";display:table;clear:both}
+.irt-fac-name{float:left;font-size:.83rem;font-weight:600;color:rgba(232,184,96,.85);letter-spacing:.01em;max-width:55%}
+.irt-pp{float:right;font-size:.84rem;color:rgba(220,215,235,.88);font-variant-numeric:tabular-nums;text-align:right}
+.irt-pp em{font-style:italic;color:rgba(255,233,189,.95)}
+@media(max-width:480px){
+  .irt-fac-name{float:none;display:block;font-size:.78rem;max-width:100%;margin-bottom:.2rem}
+  .irt-pp{float:none;display:block;text-align:left;font-size:.78rem}
+}
+.lgnd-sw{display:inline-block;width:.65rem;height:.65rem;border-radius:2px;margin:0 .15rem 0 .25rem;vertical-align:baseline;position:relative;top:1px}
+
+.cfa-tabs{display:flex;gap:.4rem;margin:1rem 0 1.25rem;background:rgba(255,255,255,.03);border:1px solid var(--border-light);border-radius:100px;padding:.3rem}
+.cfa-tab{flex:1;font-family:var(--body);font-size:.85rem;font-weight:600;letter-spacing:.01em;padding:.55rem .85rem;border-radius:100px;border:none;background:transparent;color:var(--text-muted);cursor:pointer;transition:all .2s ease}
+.cfa-tab:hover{color:var(--text)}
+.cfa-tab-active{background:linear-gradient(135deg,rgba(232,184,96,.22),rgba(232,184,96,.1));color:#FFE9BD;box-shadow:0 2px 8px rgba(232,184,96,.15)}
+.cfa-view{display:none}
+.cfa-view-active{display:block;animation:fadeIn .3s ease}
+@media(max-width:640px){
+  .cfa-tab{font-size:.78rem;padding:.5rem .55rem}
+}
+.tif-chart-card{background:rgba(255,255,255,.025);border:1px solid var(--border-light);border-radius:10px;padding:1rem .9rem .85rem;margin-bottom:.85rem}
+.tif-chart-title{font-family:var(--heading);font-size:.95rem;font-weight:600;color:var(--text);margin-bottom:.5rem;line-height:1.3}
+.tif-chart-meta{font-size:.78rem;color:var(--text-muted);margin-bottom:.3rem}
+.tif-legend{font-size:.78rem;color:var(--text-muted);margin-top:.4rem;line-height:1.5}
+.tif-legend-line{display:inline-block;width:18px;height:2px;background:#7B6FE0;vertical-align:middle;margin:0 .25rem 0 .35rem;position:relative;top:-1px}
+.tif-legend-line.dashed{background:none;border-top:1.5px dashed rgba(180,175,210,0.55)}
+.tif-section-intro{font-size:.85rem;color:var(--text-muted);font-weight:300;line-height:1.55;margin:1.5rem 0 1rem}
+
+/* ===========================================================
+   NEW: Statement-card item layout (replaces .scale-btn flow)
+   =========================================================== */
+.item-area{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:1.5rem 0;
+}
+.item-area.first-load{opacity:0;animation:fadeIn .5s ease .25s forwards}
+.item-area.slide-fwd{animation:slideInRight .28s ease}
+.item-area.slide-bwd{animation:slideInLeft .28s ease}
+
+.item-center{
+  width:100%;
+  max-width:880px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:0 auto;
+  position:relative;
+}
+
+/* Prompt row hidden — items stand alone */
+.item-prompt{display:none}
+
+.stmt-stack{
+  display:flex;
+  flex-direction:column;
+  gap:.15rem;
+  width:100%;
+  max-width:880px;
+  margin:0 auto;
+}
+
+.stmt-card{
+  position:relative;
+  display:block;
+  padding:.55rem 1rem;
+  background:transparent;
+  border:none;
+  border-radius:0;
+  cursor:pointer;
+  user-select:none;
+  -webkit-tap-highlight-color:transparent;
+  transition:none;
+}
+/* No card chrome — text-only treatment */
+.stmt-card::before{display:none}
+.stmt-indicator{display:none}
+.stmt-check{display:none}
+
+.stmt-card:focus-visible{outline:none}
+.stmt-card:focus-visible .stmt-text{color:#7CE3A6}
+
+@media(hover:hover){
+  .stmt-card:hover .stmt-text{color:#7CE3A6}    /* soft green on hover */
+}
+.stmt-card:active .stmt-text{opacity:.8}
+
+.stmt-card.selected .stmt-text{
+  color:#E8C870;
+}
+
+.stmt-text{
+  display:block;
+  width:100%;
+  margin:0 auto;                  /* keep centered even when JS sets a max-width */
+  font-family:var(--body);
+  font-size:1.05rem;
+  font-weight:400;
+  line-height:1.55;
+  color:#FFFFFF;                  /* white at rest */
+  text-align:center;
+  white-space:normal;             /* always allow wrapping; JS unifyStmtWrap keeps it uniform */
+  text-wrap:balance;              /* balance the lines when wrapping */
+  transition:color .15s ease;
+}
+
+/* Tighter mobile tweaks */
+@media(max-width:640px){
+  .item-area{padding:1rem 0}
+  .stmt-card{padding:.55rem .5rem}
+  .stmt-text{
+    font-size:1rem;
+    line-height:1.5;
+    white-space:normal;    /* mobile: allow wrapping; text-wrap:balance + JS unify keep it tidy */
+  }
+}
+@media(max-width:380px){
+  .stmt-card{padding:.5rem .35rem}
+  .stmt-text{font-size:.95rem}
+}
+
+/* New explainer styles */
+.explainer-eyebrow{font-family:var(--body);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(146,158,230,.8);margin-bottom:1rem;text-align:center}
+.explainer-demo-v2{display:flex;flex-direction:column;gap:.4rem;margin:0 0 1.5rem;background:rgba(0,0,0,.18);padding:1rem .85rem;border-radius:14px;border:1px solid rgba(255,255,255,.04)}
+.demo-stmt{display:flex;align-items:center;gap:.65rem;padding:.6rem .7rem;border-radius:9px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.05);font-size:.85rem;color:rgba(200,196,230,.78);line-height:1.35;transition:none;text-align:left}
+.demo-stmt span:last-child{flex:1}
+.demo-dot{flex-shrink:0;width:13px;height:13px;border-radius:50%;border:1.5px solid rgba(255,255,255,.22);background:rgba(255,255,255,.02);position:relative}
+.demo-stmt.is-selected{background:linear-gradient(135deg,rgba(232,184,96,.1),rgba(232,184,96,.03));border-color:rgba(232,184,96,.55);color:#F5E9CC;animation:demoPulse 2.2s ease-in-out 1s infinite}
+.demo-stmt.is-selected .demo-dot{border-color:rgba(232,184,96,.85);background:linear-gradient(135deg,#F0C878,#D9A040);box-shadow:0 0 0 3px rgba(232,184,96,.12)}
+.demo-stmt.is-selected .demo-dot::after{content:'';position:absolute;inset:2px;border-radius:50%;background:linear-gradient(135deg,rgba(28,20,8,.4),transparent)}
+@keyframes demoPulse{0%,100%{box-shadow:0 0 0 0 rgba(232,184,96,0)}50%{box-shadow:0 0 0 4px rgba(232,184,96,.08)}}
+
+</style>
+<style>
+/* ===== Added: dilemma, thank-you, yes/no, welcome-title screens ===== */
+.hero h1.hero-puzzle{white-space:normal;font-size:clamp(1.7rem,6vw,2.4rem)}
+.dilemma-screen{max-width:760px;margin:0 auto;padding:0 1.5rem 16vh;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;background:var(--bg)}
+.dilemma-body{flex:1;padding:1.5rem 0 0}
+.dilemma-title{font-family:var(--heading);font-size:1.7rem;font-weight:700;color:var(--text);text-align:center;margin:.5rem 0 1.4rem;text-wrap:balance;letter-spacing:-.02em}
+.dilemma-scenario{font-size:1.02rem;line-height:1.75;color:var(--text);background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.4rem 1.5rem;margin-bottom:1.6rem;box-shadow:var(--shadow-sm)}
+.dilemma-prompt{font-size:1.02rem;font-weight:600;color:var(--text);text-align:center;margin-bottom:.35rem}
+.dilemma-prompt.error-state{color:var(--error)}
+.dilemma-prompt.error-state+.stmt-stack .stmt-text{color:var(--error)}
+@media(max-width:640px){.dilemma-screen{padding:0 1rem 0}.dilemma-title{font-size:1.4rem}.dilemma-scenario{font-size:.96rem;padding:1.1rem 1.15rem}}
+.thankyou-screen{min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:2rem 1.5rem;background:var(--bg);text-align:center}
+.thankyou-card{max-width:480px;animation:fadeIn .5s ease}
+.thankyou-card h1{font-family:var(--heading);font-size:2rem;font-weight:700;color:var(--text);margin:.4rem 0 .85rem;letter-spacing:-.02em}
+.thankyou-id{display:inline-flex;flex-direction:column;align-items:center;gap:.3rem;margin:0 auto 1.4rem;padding:.75rem 1.4rem;border:1px solid var(--border);border-radius:14px;background:rgba(255,255,255,.6);font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted)}
+.thankyou-id span{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:1.15rem;font-weight:600;letter-spacing:.02em;text-transform:none;color:var(--text);user-select:all;-webkit-user-select:all}
+.thankyou-card p.thankyou-results{margin-bottom:1.2rem}
+.thankyou-card p{font-size:1.05rem;color:var(--text-muted);line-height:1.65;margin-bottom:2rem}
+.thankyou-check{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#22A822,#4ACA4A);color:#fff;font-size:2rem;display:flex;align-items:center;justify-content:center;margin:0 auto 1.1rem;box-shadow:0 6px 24px rgba(34,168,34,.35)}
+.yn-row{display:flex;gap:.75rem;margin-top:.45rem}
+.yn-btn{flex:1;font-family:var(--body);font-size:1rem;font-weight:600;padding:.85rem;border-radius:100px;border:1.5px solid var(--border);background:var(--bg-card);color:var(--text-muted);cursor:pointer;transition:all .15s ease;-webkit-tap-highlight-color:transparent}
+.yn-btn:hover{border-color:rgba(146,158,230,.4);color:var(--text)}
+.yn-btn.selected{border-color:rgba(100,86,212,.75);background:rgba(100,86,212,.16);color:#C7BEF7}
+.progress-seg-track{display:flex;gap:6px}
+.progress-seg{flex:1;height:4px;background:rgba(255,255,255,.08);border-radius:100px;overflow:hidden}
+.progress-seg-fill{height:100%;background:linear-gradient(90deg,#5B6EE1,#7C8AEA);border-radius:100px;transition:width .6s cubic-bezier(.25,.46,.45,.94)}
+.anon-note{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.1rem;padding:.5rem .95rem;border-radius:100px;background:rgba(100,86,212,.12);border:1px solid rgba(100,86,212,.32);font-size:.84rem;color:#C7BEF7;font-weight:500;line-height:1.3;text-align:left}
+.anon-note svg{flex-shrink:0}
+
+/* --- Float-top header (keeps statements/question centered; instructions & error grow upward) --- */
+.item-float-top{position:static;display:flex;flex-direction:column;align-items:center;width:100%;padding-bottom:.55rem}
+.item-anchor{width:100%;display:flex;flex-direction:column;align-items:center}
+.stmt-anchor{position:relative;width:100%}
+.pps-instr-pin{position:absolute;left:0;right:0;bottom:100%}
+.pps-instr-pin.in-flow{position:static}
+.pps-instruction{text-align:center;max-width:600px;margin:0 auto 1.15rem;font-size:1.05rem;font-weight:500;color:var(--text);line-height:1.55;text-wrap:balance}
+.item-note{font-size:1rem;color:var(--text);font-style:italic;line-height:1.5;text-align:center;max-width:560px;margin:0 auto 1.1rem;padding:.6rem .95rem;background:rgba(255,255,255,.045);border:1px solid var(--border-light);border-radius:10px;text-wrap:balance}
+@media(max-width:640px){.pps-instruction{font-size:.98rem}}
+</style>
+
+<style>
+/* =================== PROFESSIONAL WHITE THEME =================== */
+:root{
+  --bg:#FBFBFD;--bg-card:#FFFFFF;--bg-card2:#F2F3F7;
+  --text:#1C2024;--text-muted:#5A6270;--text-light:#8A92A0;
+  --border:#E3E6EB;--border-light:#EDEFF3;
+  --primary:#5360E0;--primary-dark:#4450C8;--primary-light:rgba(83,96,224,.12);
+  --error:#DC2626;--error-bg:#FEF2F2;
+  --shadow-sm:0 1px 2px rgba(20,25,40,.06);
+  --shadow:0 6px 24px rgba(20,25,40,.08),0 0 0 1px rgba(20,25,40,.04);
+}
+body{background:var(--bg);color:var(--text)}
+
+/* hero */
+.hero{background:var(--bg)}
+.hero::before{background:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(83,96,224,.06) 0%,transparent 65%)}
+.hero::after{background-image:repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(20,25,40,.018) 39px,rgba(20,25,40,.018) 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(20,25,40,.018) 39px,rgba(20,25,40,.018) 40px)}
+.hero h1{color:var(--text)}
+.hero-eyebrow{color:var(--primary-dark)}
+.hero-rule{background:linear-gradient(90deg,transparent,rgba(83,96,224,.45),transparent)}
+.hero-divider{background:linear-gradient(90deg,transparent,rgba(83,96,224,.35),transparent)}
+.hero-card{background:#FFFFFF;border:1px solid var(--border);backdrop-filter:none;box-shadow:0 4px 24px rgba(20,25,40,.07),0 0 0 1px rgba(20,25,40,.03)}
+.hero-sub{color:#3A4250}
+.hero-meta{color:#4A5260;border:1px solid var(--border);background:#FFFFFF;backdrop-filter:none}
+.hero-meta-item+.hero-meta-item{border-left:1px solid var(--border)}
+.hero-meta-item svg{color:var(--primary)}
+@media(max-width:640px){.hero-meta-item+.hero-meta-item{border-left:none;border-top:1px solid var(--border)}}
+
+/* progress */
+.progress-track,.progress-seg{background:#E6E8EE}
+.progress-pct{color:var(--primary-dark)}
+
+/* likert buttons */
+.scale-btn{background:#FFFFFF;border:1px solid var(--border)}
+.scale-lbl{color:#39414E}
+@media(hover:hover){.scale-btn:hover{border-color:rgba(83,96,224,.4);background:#F5F6FA}}
+.likert .scale-btn.selected{border-color:var(--primary);background:rgba(83,96,224,.07)}
+.likert .scale-btn.selected .scale-lbl{color:var(--primary-dark)}
+@media(hover:hover){.likert .scale-btn:hover{border-color:rgba(83,96,224,.45);background:#F5F6FA}.likert .scale-btn:hover .scale-lbl{color:var(--primary-dark)}}
+.likert .scale-btn:focus-visible .scale-lbl{color:var(--primary-dark)}
+
+/* statement cards (text-only -> add soft selected pill on white) */
+.stmt-card{border-radius:10px;transition:background .15s ease}
+.stmt-text{color:#2A2F37}
+@media(hover:hover){.stmt-card:hover .stmt-text{color:var(--primary-dark)}}
+.stmt-card:focus-visible .stmt-text{color:var(--primary-dark)}
+.stmt-card.selected{background:rgba(83,96,224,.09)}
+.stmt-card.selected .stmt-text{color:var(--primary-dark)}
+
+/* dilemma */
+.dilemma-scenario{background:#FFFFFF;border:1px solid var(--border);color:var(--text);box-shadow:0 2px 12px rgba(20,25,40,.05)}
+
+
+/* per-item note callout */
+.item-note{background:#EEF0F6;border:1px solid var(--border);color:#2A2F37}
+
+/* demographics */
+.demo-card{background:#FFFFFF;border:1px solid var(--border);box-shadow:var(--shadow)}
+.demo-screen::before{background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(83,96,224,.05) 0%,transparent 60%)}
+.demo-field input[type="number"],.demo-field select,.demo-field textarea{background:#FFFFFF;border:1px solid var(--border);color:var(--text)}
+.demo-field input[type="number"]:focus,.demo-field select:focus,.demo-field textarea:focus{border-color:var(--primary);background:#FFFFFF}
+.demo-field select option{background:#FFFFFF;color:var(--text)}
+.demo-field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%235A6270' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E")}
+
+/* yes/no */
+.yn-btn{background:#FFFFFF;border:1.5px solid var(--border);color:#5A6270}
+.yn-btn:hover{border-color:rgba(83,96,224,.4);color:var(--text)}
+.yn-btn.selected{border-color:var(--primary);background:rgba(83,96,224,.1);color:var(--primary-dark)}
+
+/* nav back */
+.btn-back{border:1px solid var(--border);color:#5A6270}
+.btn-back:hover{background:#F2F3F7;color:var(--text);border-color:#C8CDD6}
+
+/* errors */
+.error-msg{background:var(--error-bg);color:var(--error);border:1px solid rgba(220,38,38,.25)}
+.demo-error{background:var(--error-bg);color:var(--error);border:1px solid rgba(220,38,38,.25)}
+
+/* submit overlay */
+.submitting-overlay{background:rgba(255,255,255,.94)}
+.spinner{border:2px solid rgba(20,25,40,.12);border-top-color:var(--primary)}
+
+/* thank-you */
+.thankyou-card p{color:var(--text-muted)}
+
+/* =================== STAGGERED DILEMMA INTRO ANIMATION =================== */
+@keyframes dZoom{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+@keyframes dUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.dilemma-title{animation:dZoom .6s cubic-bezier(.22,.61,.36,1) both}
+.dilemma-scenario{animation:dUp .55s ease .38s both}
+.dilemma-prompt{animation:dUp .45s ease .72s both}
+.dilemma-screen .stmt-card{animation:dUp .45s ease both}
+.dilemma-screen .stmt-card:nth-child(1){animation-delay:.92s}
+.dilemma-screen .stmt-card:nth-child(2){animation-delay:1.06s}
+
+.demo-field select{-webkit-appearance:menulist!important;-moz-appearance:menulist!important;appearance:menulist!important;background-image:none!important;padding-right:1rem!important}
+/* === Scroll room: full screen of pull-up space ONLY on the 3 moral-dilemma screens === */
+@media(max-width:640px){
+  .dilemma-screen{min-height:200svh;padding-bottom:100svh}
+  .survey-shell{padding-bottom:calc(1.5rem + env(safe-area-inset-bottom,0px))}
+  .demo-screen,.hero,.explainer,.thankyou-screen{padding-bottom:calc(2rem + env(safe-area-inset-bottom,0px))}
+}
+/* NPI buttons + instructions page */
+.npi-wrap{max-width:520px}
+.npi-wrap .scale-btn{padding:.9rem 1.25rem;text-align:center}
+.npi-wrap .scale-lbl{font-size:1rem;line-height:1.45;color:#2A2F37}
+.instr-plain{max-width:600px;width:100%;margin:0 auto}
+.instr-text{font-size:1.05rem;font-weight:500;line-height:1.55;color:var(--text);text-align:center;margin-bottom:.9rem}
+.instr-list{font-size:1.05rem;font-weight:500;line-height:1.55;color:var(--text);text-align:center;list-style-position:inside;padding-left:0}
+.instr-list li{margin-bottom:.6rem}
+@media(max-width:640px){.instr-text,.instr-list{font-size:.98rem}.npi-wrap .scale-lbl{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div id="app"><div class="hero"><div class="hero-eyebrow">A Research Study</div><div class="hero-rule"></div><h1 class="hero-puzzle">A Murder Puzzle</h1><div class="hero-divider"></div><div class="hero-card"><p class="hero-sub">This study examines the link between personality and how people respond to moral dilemmas.</p><p class="hero-sub" style="margin-top:0.6rem;font-size:.95rem">You’ll be presented with 3 moral dilemmas. After each dilemma you will take a short, validated personality scale. There are no right or wrong answers — please just answer honestly.</p><p class="hero-sub" style="margin-top:0.7rem"><strong>All responses are anonymous.</strong></p><p class="hero-sub" style="margin-top:0.5rem;font-size:.85rem;opacity:.85">If on desktop, you can press <strong>Enter</strong> to move to the next question.</p></div><button class="btn-hero" id="btnStart">Begin</button></div></div>
+<div class="submitting-overlay" id="submitting"><div class="spinner"></div><div class="spinner-text" id="spinnerText"></div></div>
+<script>
+const GOOGLE_SCRIPT_URL='https://script.google.com/macros/s/AKfycbzWSWPf6hQHjsOtV4BG8EwulXQhnucBNK_6saXB914B1ZZrarsvBAPdeiHesToDxhKpjg/exec';
+// PPS: each item has 5 first-person statements in display order.
+// Each statement is {v: score 0-4, t: text}. Scoring uses .v, never the display index.
+var S1_ITEMS=[{"id": "PPSInterpersonal1manipulationnaturally", "factor": "INT", "statements": [{"v": 0, "t": "Manipulation does not come naturally to me."}, {"v": 1, "t": "Manipulation comes slightly naturally to me."}, {"v": 2, "t": "Manipulation comes moderately naturally to me."}, {"v": 3, "t": "Manipulation comes considerably naturally to me."}, {"v": 4, "t": "Manipulation comes completely naturally to me."}], "note": null, "displayNum": 0}, {"id": "PPSAffective1coldunemotional", "factor": "AFF", "statements": [{"v": 0, "t": "I am not a cold and unemotional person."}, {"v": 1, "t": "I am a slightly cold and unemotional person."}, {"v": 2, "t": "I am a moderately cold and unemotional person."}, {"v": 3, "t": "I am a considerably cold and unemotional person."}, {"v": 4, "t": "I am a completely cold and unemotional person."}], "note": null, "displayNum": 1}, {"id": "PPSLifestyle1disregardtasks", "factor": "LIF", "statements": [{"v": 0, "t": "I don’t disregard tasks I’m expected to take care of."}, {"v": 1, "t": "I slightly disregard tasks I’m expected to take care of."}, {"v": 2, "t": "I moderately disregard tasks I’m expected to take care of."}, {"v": 3, "t": "I considerably disregard tasks I’m expected to take care of."}, {"v": 4, "t": "I completely disregard tasks I’m expected to take care of."}], "note": null, "displayNum": 2}, {"id": "PPSInterpersonal2likeandtrust", "factor": "INT", "statements": [{"v": 0, "t": "I cannot get people to like me and trust me when they shouldn’t."}, {"v": 1, "t": "To a slight extent, I can get people to like me and trust me when they shouldn’t."}, {"v": 2, "t": "To a moderate extent, I can get people to like me and trust me when they shouldn’t."}, {"v": 3, "t": "To a considerable extent, I can get people to like me and trust me when they shouldn’t."}, {"v": 4, "t": "To a complete extent, I can get people to like me and trust me when they shouldn’t."}], "note": null, "displayNum": 3}, {"id": "PPSAffective2lackremorse", "factor": "AFF", "statements": [{"v": 0, "t": "I don’t lack remorse."}, {"v": 1, "t": "I lack remorse to a slight extent."}, {"v": 2, "t": "I lack remorse to a moderate extent."}, {"v": 3, "t": "I lack remorse to a considerable extent."}, {"v": 4, "t": "I lack remorse to a complete extent."}], "note": null, "displayNum": 4}, {"id": "PPSLifestyle2rashdecisions", "factor": "LIF", "statements": [{"v": 0, "t": "I don’t make rash decisions that I might regret later."}, {"v": 1, "t": "I make slightly rash decisions that I might regret later."}, {"v": 2, "t": "I make moderately rash decisions that I might regret later."}, {"v": 3, "t": "I make considerably rash decisions that I might regret later."}, {"v": 4, "t": "I make completely rash decisions that I might regret later."}], "note": null, "displayNum": 5}, {"id": "PPSInterpersonal3bullshitartist", "factor": "INT", "statements": [{"v": 0, "t": "I’m not a good bullshit artist."}, {"v": 1, "t": "I’m a slightly good bullshit artist."}, {"v": 2, "t": "I’m a moderately good bullshit artist."}, {"v": 3, "t": "I’m a considerably good bullshit artist."}, {"v": 4, "t": "I’m an extremely good bullshit artist."}], "note": null, "displayNum": 6}, {"id": "PPSAffective3friendpain", "factor": "AFF", "statements": [{"v": 0, "t": "I feel affected by a friend’s emotional pain."}, {"v": 1, "t": "I feel slightly unaffected by a friend’s emotional pain."}, {"v": 2, "t": "I feel moderately unaffected by a friend’s emotional pain."}, {"v": 3, "t": "I feel considerably unaffected by a friend’s emotional pain."}, {"v": 4, "t": "I feel completely unaffected by a friend’s emotional pain."}], "note": null, "displayNum": 7}, {"id": "PPSLifestyle3irresponsibly", "factor": "LIF", "statements": [{"v": 0, "t": "I don’t behave irresponsibly."}, {"v": 1, "t": "I behave slightly irresponsibly."}, {"v": 2, "t": "I behave moderately irresponsibly."}, {"v": 3, "t": "I behave considerably irresponsibly."}, {"v": 4, "t": "I behave completely irresponsibly."}], "note": null, "displayNum": 8}, {"id": "PPSInterpersonal4charmonandoff", "factor": "INT", "statements": [{"v": 0, "t": "I can’t turn my charm on and off like a tap."}, {"v": 1, "t": "To a slight extent, I can turn my charm on and off like a tap."}, {"v": 2, "t": "To a moderate extent, I can turn my charm on and off like a tap."}, {"v": 3, "t": "To a considerable extent, I can turn my charm on and off like a tap."}, {"v": 4, "t": "To a complete extent, I can turn my charm on and off like a tap."}], "note": null, "displayNum": 9}, {"id": "PPSLifestyle4disregardconsequences", "factor": "LIF", "statements": [{"v": 0, "t": "I don’t disregard possible consequences."}, {"v": 1, "t": "I slightly disregard possible consequences."}, {"v": 2, "t": "I moderately disregard possible consequences."}, {"v": 3, "t": "I considerably disregard possible consequences."}, {"v": 4, "t": "I completely disregard possible consequences."}], "note": null, "displayNum": 10}, {"id": "PPSAffective4shallowfeelings", "factor": "AFF", "statements": [{"v": 0, "t": "I don’t have shallow feelings or lack emotional depth."}, {"v": 1, "t": "To a slight extent, I have shallow feelings and lack emotional depth."}, {"v": 2, "t": "To a moderate extent, I have shallow feelings and lack emotional depth."}, {"v": 3, "t": "To a considerable extent, I have shallow feelings and lack emotional depth."}, {"v": 4, "t": "To a complete extent, I have shallow feelings and lack emotional depth."}], "note": null, "displayNum": 11}, {"id": "PPSLifestyle5payownway", "factor": "LIF", "statements": [{"v": 0, "t": "I make sure I pay my own way and do not let others foot the bill."}, {"v": 1, "t": "To a slight extent, I fail to pay my own way and let others foot the bill."}, {"v": 2, "t": "To a moderate extent, I fail to pay my own way and let others foot the bill."}, {"v": 3, "t": "To a considerable extent, I fail to pay my own way and let others foot the bill."}, {"v": 4, "t": "To a complete extent, I fail to pay my own way and let others foot the bill."}], "note": null, "displayNum": 12}, {"id": "PPSInterpersonal5falsepersona", "factor": "INT", "statements": [{"v": 0, "t": "I cannot adopt a false persona to con others."}, {"v": 1, "t": "I can adopt a slightly false persona to con others."}, {"v": 2, "t": "I can adopt a moderately false persona to con others."}, {"v": 3, "t": "I can adopt a considerably false persona to con others."}, {"v": 4, "t": "I can adopt a completely false persona to con others."}], "note": null, "displayNum": 13}, {"id": "PPSAffective5guiltfree", "factor": "AFF", "statements": [{"v": 0, "t": "When I do something wrong, I feel guilt."}, {"v": 1, "t": "When I do something wrong, I feel slightly guilt free."}, {"v": 2, "t": "When I do something wrong, I feel moderately guilt free."}, {"v": 3, "t": "When I do something wrong, I feel considerably guilt free."}, {"v": 4, "t": "When I do something wrong, I feel completely guilt free."}], "note": null, "displayNum": 14}, {"id": "PPSInterpersonal6talkmyway", "factor": "INT", "statements": [{"v": 0, "t": "I can’t talk my way past almost any person."}, {"v": 1, "t": "To a slight extent, I can talk my way past almost any person."}, {"v": 2, "t": "To a moderate extent, I can talk my way past almost any person."}, {"v": 3, "t": "To a considerable extent, I can talk my way past almost any person."}, {"v": 4, "t": "To a complete extent, I can talk my way past almost any person."}], "note": null, "displayNum": 15}, {"id": "PPSLifestyle6immediatepleasures", "factor": "LIF", "statements": [{"v": 0, "t": "I don’t chase immediate pleasures at the expense of long-term stability."}, {"v": 1, "t": "I chase immediate pleasures to a slight extent, even at the expense of long-term stability."}, {"v": 2, "t": "I chase immediate pleasures to a moderate extent, even at the expense of long-term stability."}, {"v": 3, "t": "I chase immediate pleasures to a considerable extent, even at the expense of long-term stability."}, {"v": 4, "t": "I chase immediate pleasures to a complete extent, even at the expense of long-term stability."}], "note": null, "displayNum": 16}, {"id": "PPSAffective6welfareregisters", "factor": "AFF", "statements": [{"v": 0, "t": "Other people’s welfare doesn’t fail to register for me emotionally."}, {"v": 1, "t": "To a slight extent, other people’s welfare fails to register for me emotionally."}, {"v": 2, "t": "To a moderate extent, other people’s welfare fails to register for me emotionally."}, {"v": 3, "t": "To a considerable extent, other people’s welfare fails to register for me emotionally."}, {"v": 4, "t": "To a complete extent, other people’s welfare fails to register for me emotionally."}], "note": null, "displayNum": 17}, {"id": "PPSLifestyle7unreliable", "factor": "LIF", "statements": [{"v": 0, "t": "I am not unreliable."}, {"v": 1, "t": "I am slightly unreliable a lot of the time."}, {"v": 2, "t": "I am moderately unreliable a lot of the time."}, {"v": 3, "t": "I am considerably unreliable a lot of the time."}, {"v": 4, "t": "I am completely unreliable a lot of the time."}], "note": null, "displayNum": 18}, {"id": "PPSInterpersonal7outsmartoutclass", "factor": "INT", "statements": [{"v": 0, "t": "I don’t outsmart and outclass other people with ease."}, {"v": 1, "t": "To a slight extent, I outsmart and outclass other people with ease."}, {"v": 2, "t": "To a moderate extent, I outsmart and outclass other people with ease."}, {"v": 3, "t": "To a considerable extent, I outsmart and outclass other people with ease."}, {"v": 4, "t": "To a complete extent, I outsmart and outclass other people with ease."}], "note": null, "displayNum": 19}, {"id": "PPSAffective7notsorry", "factor": "AFF", "statements": [{"v": 0, "t": "I am sorry for the things that I have done."}, {"v": 1, "t": "To a slight extent, I’m not sorry for the things I’ve done."}, {"v": 2, "t": "To a moderate extent, I’m not sorry for the things I’ve done."}, {"v": 3, "t": "To a considerable extent, I’m not sorry for the things I’ve done."}, {"v": 4, "t": "To a complete extent, I’m not sorry for the things I’ve done."}], "note": null, "displayNum": 20}, {"id": "PPSInterpersonal8getothersdowant", "factor": "INT", "statements": [{"v": 0, "t": "I can’t get others to do what I want without them even realizing."}, {"v": 1, "t": "To a slight extent, I can get others to do what I want without them even realizing."}, {"v": 2, "t": "To a moderate extent, I can get others to do what I want without them even realizing."}, {"v": 3, "t": "To a considerable extent, I can get others to do what I want without them even realizing."}, {"v": 4, "t": "To a complete extent, I can get others to do what I want without them even realizing."}], "note": null, "displayNum": 21}, {"id": "PPSLifestyle8disregardobligations", "factor": "LIF", "statements": [{"v": 0, "t": "I don’t disregard my obligations to others."}, {"v": 1, "t": "I slightly disregard my obligations to others."}, {"v": 2, "t": "I moderately disregard my obligations to others."}, {"v": 3, "t": "I considerably disregard my obligations to others."}, {"v": 4, "t": "I completely disregard my obligations to others."}], "note": null, "displayNum": 22}, {"id": "PPSInterpersonal9winningsmile", "factor": "INT", "statements": [{"v": 0, "t": "I can’t hide ulterior motives with a winning smile."}, {"v": 1, "t": "To a slight extent, I can hide ulterior motives with a winning smile."}, {"v": 2, "t": "To a moderate extent, I can hide ulterior motives with a winning smile."}, {"v": 3, "t": "To a considerable extent, I can hide ulterior motives with a winning smile."}, {"v": 4, "t": "To a complete extent, I can hide ulterior motives with a winning smile."}], "note": null, "displayNum": 23}, {"id": "PPSAffective8lackempathy", "factor": "AFF", "statements": [{"v": 0, "t": "I have no lack of empathy."}, {"v": 1, "t": "I have a slight lack of empathy."}, {"v": 2, "t": "I have a moderate lack of empathy."}, {"v": 3, "t": "I have a considerable lack of empathy."}, {"v": 4, "t": "I have a complete lack of empathy."}], "note": null, "displayNum": 24}, {"id": "PPSLifestyle9longtermgoals", "factor": "LIF", "statements": [{"v": 0, "t": "I am committed to my long-term goals and plans for my future."}, {"v": 1, "t": "To a slight extent, I fail to commit to long-term goals and plans for my future."}, {"v": 2, "t": "To a moderate extent, I fail to commit to long-term goals and plans for my future."}, {"v": 3, "t": "To a considerable extent, I fail to commit to long-term goals and plans for my future."}, {"v": 4, "t": "To a complete extent, I fail to commit to long-term goals and plans for my future."}], "note": null, "displayNum": 25}, {"id": "PPSInterpersonal10cheekygetaway", "factor": "INT", "statements": [{"v": 0, "t": "I have no cheeky ability to get away with things that others can’t get away with."}, {"v": 1, "t": "To a slight extent, I have a cheeky ability to get away with things that others can’t."}, {"v": 2, "t": "To a moderate extent, I have a cheeky ability to get away with things that others can’t."}, {"v": 3, "t": "To a considerable extent, I have a cheeky ability to get away with things that others can’t."}, {"v": 4, "t": "To a complete extent, I have a cheeky ability to get away with things that others can’t."}], "note": null, "displayNum": 26}, {"id": "PPSAffective9personalresponsibility", "factor": "AFF", "statements": [{"v": 0, "t": "I feel personally responsible if my actions have hurt others."}, {"v": 1, "t": "I feel a slight lack of personal responsibility if my actions have hurt others."}, {"v": 2, "t": "I feel a moderate lack of personal responsibility if my actions have hurt others."}, {"v": 3, "t": "I feel a considerable lack of personal responsibility if my actions have hurt others."}, {"v": 4, "t": "I feel a complete lack of personal responsibility if my actions have hurt others."}], "note": null, "displayNum": 27}];
+var DILEMMAS=[{"id": "MORAL1", "title": "Scenario 1", "scenario": "Dr. Tess Lee is an excellent surgeon. Every organ she transplants works.\n\nRight now, she has five patients who each need an organ. Two need a lung, two need a kidney, and one needs a heart. If they do not get the organs today, all five will die.\n\nTime is almost up when a young backpacker comes to the hospital for a routine check-up. He is healthy and has exactly the right blood type. If Dr. Lee uses his organs, the five patients will live.\n\nIs it morally permissible for Dr. Lee to kill the backpacker and use his organs to save the five patients?", "options": ["No, Dr. Tess should not operate.", "Yes, Dr. Tess should operate."]}, {"id": "MORAL2", "title": "Scenario 2", "scenario": "This is the same situation as before, with one key difference:\nDr. Tess is informed that earlier that morning, the backpacker was driving recklessly and crashed into a car that had the five patients in it. The backpacker was unharmed, but the crash directly caused the severe trauma and organ failure that the five patients are now being treated for.\n\nIf the doctor kills the driver and harvests his organs, the five innocent victims will live. If the doctor does nothing, the driver will walk away unharmed, and his five victims will die.", "options": ["No, Dr. Tess should not operate.", "Yes, Dr. Tess should operate."]}, {"id": "MORAL3", "title": "Scenario 3", "scenario": "In this scenario, Dr. Tess has poisoned the five patients on purpose earlier in the day. She did this because the patients had named her in their wills, so she would inherit their money if they died.\n\nNow she regrets what she did, but she cannot stop the poison from killing them, as there is no antidote. The only way to save the five patients now is to kill an innocent backpacker and use his organs. If she does nothing, then by the end of the day she will have murdered five innocent patients. If she operates, she will have only murdered one innocent patient instead of five.", "options": ["No, Dr. Tess should not operate.", "Yes, Dr. Tess should operate."]}];
+// NPI-16 (forced choice). Response stored as 0 = A, 1 = B; 'key' = narcissistic option (Ames et al., 2006).
+var NPI_ITEMS=[{"id": "NPI1", "a": "When people compliment me I sometimes get embarrassed.", "b": "I know that I am good because everybody keeps telling me so.", "key": "B"}, {"id": "NPI2", "a": "I prefer to blend in with the crowd.", "b": "I like to be the center of attention.", "key": "B"}, {"id": "NPI3", "a": "I am no better or worse than most people.", "b": "I think I am a special person.", "key": "B"}, {"id": "NPI4", "a": "I like to have authority over other people.", "b": "I don’t mind following orders.", "key": "A"}, {"id": "NPI5", "a": "I find it easy to manipulate people.", "b": "I don’t like it when I find myself manipulating people.", "key": "A"}, {"id": "NPI6", "a": "I insist upon getting the respect that is due me.", "b": "I usually get the respect that I deserve.", "key": "A"}, {"id": "NPI7", "a": "I try not to be a show off.", "b": "I will usually show off if I get the chance.", "key": "B"}, {"id": "NPI8", "a": "I always know what I am doing.", "b": "Sometimes I am not sure of what I am doing.", "key": "A"}, {"id": "NPI9", "a": "Sometimes I tell good stories.", "b": "Everybody likes to hear my stories.", "key": "B"}, {"id": "NPI10", "a": "I expect a great deal from other people.", "b": "I like to do things for other people.", "key": "A"}, {"id": "NPI11", "a": "I really like to be the center of attention.", "b": "It makes me uncomfortable to be the center of attention.", "key": "A"}, {"id": "NPI12", "a": "Being an authority doesn’t mean that much to me.", "b": "People always seem to recognize my authority.", "key": "B"}, {"id": "NPI13", "a": "I am going to be a great person.", "b": "I hope I am going to be successful.", "key": "A"}, {"id": "NPI14", "a": "People sometimes believe what I tell them.", "b": "I can make anybody believe anything I want them to.", "key": "B"}, {"id": "NPI15", "a": "I am more capable than other people.", "b": "There is a lot that I can learn from other people.", "key": "A"}, {"id": "NPI16", "a": "I am much like everybody else.", "b": "I am an extraordinary person.", "key": "B"}];
+var NPI_INSTRUCTION_INTRO="On the next screen there will be two statements.";
+var NPI_INSTRUCTION_POINTS=["Choose the statement that comes closest to describing your feelings and beliefs about yourself.","You may feel that both, or neither statement describes you well, but pick the one that comes closest compared to the other."];
+// LSRP (36 items + 1 validity item). Recorded 1–4 (1 = Disagree Strongly, 4 = Agree Strongly). No reverse-scoring applied.
+var LSRP_ITEMS=[{"id": "LSRPCallous1Feelbademotionalpain", "factor": "Callous", "text": "I feel bad if my words or actions cause someone else to feel emotional pain.", "order": 1}, {"id": "LSRPEgocentric1Justifiedanything", "factor": "Egocentric", "text": "In today’s world, I feel justified in doing anything I can get away with to succeed.", "order": 1}, {"id": "LSRPAntisocial1Dontfollowrules", "factor": "Antisocial", "text": "I know rules are there, but I don’t tend to follow them.", "order": 1}, {"id": "LSRPCallous2Nothurtothers", "factor": "Callous", "text": "I make a point of trying not to hurt others in pursuit of my goals.", "order": 2}, {"id": "LSRPEgocentric2Survivaloffittest", "factor": "Egocentric", "text": "Success is based on survival of the fittest; I am not concerned about the losers.", "order": 2}, {"id": "LSRPAntisocial2Oftenbored", "factor": "Antisocial", "text": "I am often bored.", "order": 2}, {"id": "LSRPEgocentric3Enjoymanipulating", "factor": "Egocentric", "text": "I enjoy manipulating other people’s feelings.", "order": 3}, {"id": "LSRPCallous3Emotionalatfunerals", "factor": "Callous", "text": "People are too emotional at funerals.", "order": 3}, {"id": "LSRPAntisocial3Sametrouble", "factor": "Antisocial", "text": "I find myself in the same kinds of trouble, time after time.", "order": 3}, {"id": "LSRPEgocentric4Moneymostimportant", "factor": "Egocentric", "text": "Making a lot of money is my most important goal.", "order": 4}, {"id": "LSRPCallous4Upsetothersexpense", "factor": "Callous", "text": "I would be upset if my success came at someone else’s expense.", "order": 4}, {"id": "LSRPAntisocial4Beforethinking", "factor": "Antisocial", "text": "I often do things before thinking them through.", "order": 4}, {"id": "LSRPEgocentric5Tellwhattheywanttohear", "factor": "Egocentric", "text": "I tell other people what they want to hear so that they will do what I want them to do.", "order": 5}, {"id": "LSRPCallous5Cheatingnotjustifiable", "factor": "Callous", "text": "Cheating is not justifiable because it is unfair to others.", "order": 5}, {"id": "LSRPAntisocial5Shoutingmatches", "factor": "Antisocial", "text": "I have been in a lot of shouting matches with other people.", "order": 5}, {"id": "LSRPEgocentric6Whatsrightgetaway", "factor": "Egocentric", "text": "For me, what’s right is whatever I can get away with.", "order": 6}, {"id": "LSRPCallous6Crysadmovies", "factor": "Callous", "text": "I tend to cry in sad movies.", "order": 6}, {"id": "LSRPAntisocial6Planningthingsout", "factor": "Antisocial", "text": "I like planning things out.", "order": 6}, {"id": "LSRPEgocentric7Rippedoffdeserveit", "factor": "Egocentric", "text": "People who are stupid enough to get ripped off usually deserve it.", "order": 7}, {"id": "LSRPAntisocial7Troubledoesntbother", "factor": "Antisocial", "text": "Getting into trouble doesn’t bother me.", "order": 7}, {"id": "LSRPCallous7Notthinkfeelings", "factor": "Callous", "text": "I tend not to think about other people’s feelings.", "order": 7}, {"id": "LSRPEgocentric8Lookingoutformyself", "factor": "Egocentric", "text": "Looking out for myself is my top priority.", "order": 8}, {"id": "LSRPAntisocial8Blowingtop", "factor": "Antisocial", "text": "When I get frustrated, I often “let off steam” by blowing my top.", "order": 8}, {"id": "LSRPCallous8Wouldntlie", "factor": "Callous", "text": "Even if I were trying very hard to sell something, I wouldn’t lie about it.", "order": 8}, {"id": "LSRPAntisocial9Cantkeepoutoftrouble", "factor": "Antisocial", "text": "I usually can’t keep out of trouble for too long.", "order": 9}, {"id": "LSRPEgocentric9Admirecleverscam", "factor": "Egocentric", "text": "I often admire a really clever scam.", "order": 9}, {"id": "LSRPCallous9Feelbaddowrong", "factor": "Callous", "text": "I feel bad when I do something wrong.", "order": 9}, {"id": "LSRPAntisocial10Loseinterest", "factor": "Antisocial", "text": "I quickly lose interest in tasks I start.", "order": 10}, {"id": "VALIDADULTHORSE", "factor": "Validity", "text": "I have given birth to a full grown adult horse.", "order": 1}, {"id": "LSRPEgocentric10Goodies", "factor": "Egocentric", "text": "My main purpose in life is getting as many goodies as I can.", "order": 10}, {"id": "LSRPCallous10Feelsadmyself", "factor": "Callous", "text": "When people are sad around me, I feel sad myself.", "order": 10}, {"id": "LSRPAntisocial11Considerconsequences", "factor": "Antisocial", "text": "Before I do anything, I carefully consider the possible consequences.", "order": 11}, {"id": "LSRPEgocentric11Bottomline", "factor": "Egocentric", "text": "I let others worry about higher values; my main concern is with the bottom line.", "order": 11}, {"id": "LSRPCallous11Warmperson", "factor": "Callous", "text": "My friends consider me a warm person.", "order": 11}, {"id": "LSRPAntisocial12Rebel", "factor": "Antisocial", "text": "I am a bit of a rebel.", "order": 12}, {"id": "LSRPCallous12Notemotional", "factor": "Callous", "text": "I’m not a very emotional person.", "order": 12}, {"id": "LSRPAntisocial13Dontplanahead", "factor": "Antisocial", "text": "I don’t plan anything very far in advance.", "order": 13}];
+var LSRP_ANCHORS=["Disagree Strongly", "Disagree Somewhat", "Agree Somewhat", "Agree Strongly"];
+var PPS_INSTRUCTION_MAIN="Pick the statement that best describes how you have been most of the time, in most situations during the last 5 years.";
+var SURVEY_TITLE="A Murder Puzzle";
+// === Redirect target: change this URL to your Reddit post before publishing ===
+var REDDIT_URL="https://www.reddit.com/r/SampleSize/";
+
+// ===================== CONTROLLER =====================
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+// Build the ordered screen list:
+// Dilemma 1 -> NPI-16 -> Dilemma 2 -> PPS -> Dilemma 3 -> LSRP
+var SCREENS=[];
+SCREENS.push({type:'welcome'});
+SCREENS.push({type:'dilemma',d:DILEMMAS[0],section:0});
+SCREENS.push({type:'instructions',text:NPI_INSTRUCTION_INTRO,points:NPI_INSTRUCTION_POINTS,section:0});
+NPI_ITEMS.forEach(function(it){SCREENS.push({type:'npi',item:it,auto:true,section:0});});
+SCREENS.push({type:'dilemma',d:DILEMMAS[1],section:1});
+S1_ITEMS.forEach(function(it){SCREENS.push({type:'pps',item:it,section:1});});
+SCREENS.push({type:'dilemma',d:DILEMMAS[2],section:2});
+LSRP_ITEMS.forEach(function(it){SCREENS.push({type:'likert',item:it,anchors:LSRP_ANCHORS,base:1,auto:true,section:2});});
+SCREENS.push({type:'demographics'});
+SCREENS.push({type:'thankyou'});
+
+var QUESTION_TYPES={dilemma:1,likert:1,pps:1,npi:1};
+var ANSWERABLE=[];
+SCREENS.forEach(function(s,i){if(QUESTION_TYPES[s.type])ANSWERABLE.push(i);});
+var SECTIONS=[[],[],[]];
+SCREENS.forEach(function(s,i){if((QUESTION_TYPES[s.type]||s.type==='instructions')&&typeof s.section==='number')SECTIONS[s.section].push(i);});
+var FIRST_PPS=-1;for(var fp=0;fp<SCREENS.length;fp++){if(SCREENS[fp].type==='pps'){FIRST_PPS=fp;break;}}
+var FIRST_NPI=-1;for(var fn=0;fn<SCREENS.length;fn++){if(SCREENS[fn].type==='npi'){FIRST_NPI=fn;break;}}
+var THANKYOU_INDEX=SCREENS.length-1;
+var DEMO_INDEX=-1;for(var di=0;di<SCREENS.length;di++){if(SCREENS[di].type==='demographics'){DEMO_INDEX=di;break;}}
+var LAST_ANSWERABLE=ANSWERABLE.length?ANSWERABLE[ANSWERABLE.length-1]:-1;
+
+function answerablePct(idx){
+  var pos=ANSWERABLE.indexOf(idx);
+  if(pos<0)return 0;
+  return Math.round(((pos+1)/ANSWERABLE.length)*100);
+}
+
+// Matched (case-insensitive) against every ISP / organisation / ASN name the IP services return.
+// Kept specific on purpose so ordinary home and mobile ISPs are not flagged.
+var VPN_KEYWORDS=[
+  // Consumer VPN brands and their parent companies
+  'vpn','nordvpn','nordsec','tefincom','expressvpn','express vpn','surfshark','cyberghost','private internet access','kape technologies',
+  'mullvad','amagicom','protonvpn','proton ag','proton technologies','windscribe','tunnelbear','ivpn','hide.me','eventure','hotspot shield',
+  'anchorfree','pango','ipvanish','purevpn','gz systems','torguard','astrill','vyprvpn','golden frog','zenmate','strongvpn','privatevpn',
+  'airvpn','ovpn','perfect privacy','trust.zone','cactusvpn','ivacy','fastestvpn','atlas vpn','turbo vpn','x-vpn','hidemyass','privax',
+  'privado','urban vpn','hola vpn','hola networks','luminati','bright data','betternet','psiphon','lantern','browsec','vpn unlimited','keepsolid','safervpn',
+  'f-secure','freedome','avast','norton secure','mcafee','bitdefender','kaspersky','opera software','packethub','datacamp','cdn77',
+  'tzulo','gsl networks','clouvider','creanova','hostroyale','performive','zenlayer','xtom','datapacket','private layer','ipxo',
+  // Privacy relays / proxies / anonymisers
+  'icloud private relay','private relay','cloudflare','zscaler','netskope','tor exit','torservers','anonymous','proxy','relay',
+  // Hosting, cloud and datacentre networks (residential users are not normally on these)
+  'datacenter','data center','datacentre','hosting','server','colocation','dedicated server','vps','cloud','amazon','aws','google llc','google cloud',
+  'microsoft','azure','oracle','alibaba','tencent','huawei cloud','digitalocean','linode','akamai','vultr','choopa','constant company',
+  'ovh','hetzner','scaleway','online s.a.s','contabo','upcloud','kamatera','leaseweb','m247','psychz','quadranet','colocrossing',
+  'hostwinds','servermania','buyvm','frantech','ponynet','hostinger','ionos','godaddy','namecheap','dreamhost','rackspace','softlayer',
+  'ibm cloud','fastly','g-core','gcore','hurricane electric','cogent','servers.com','i3d','worldstream','serverius','nforce','hostkey',
+  'aeza','stark industries','pq hosting','hostpapa','interserver','sharktech','ramnode','racknerd','greencloud','bluehost'
+];
+var SUBMIT_SECRET='pps_8Kv3nQ7xW2mP';
+function generateToken(rid){var s=SUBMIT_SECRET+':'+rid;var h=0;for(var i=0;i<s.length;i++){h=((h<<5)-h)+s.charCodeAt(i);h|=0}return 'tk_'+Math.abs(h).toString(36)}
+
+var state={currentPage:0,responses:{},demoYN:{accurate:null,consent:null},demoFields:{age:'',gender:'',country:''},startTime:null,endTime:null,pausedMs:0,pauseStart:null,homeMs:0,npiInstrMs:0,pageStartTimes:[],pageTimes:[],respondentId:'R'+Date.now().toString(36)+Math.random().toString(36).slice(2,6),ipData:{},slideDir:'fwd'};
+
+// ---- IP lookup + VPN / proxy detection ----
+// Several free services are queried in parallel; results are merged so one blocked or
+// rate-limited service never leaves the IP blank. VPN status = any provider flag,
+// any VPN/hosting keyword in the ISP/organisation names, or a browser-vs-IP timezone mismatch.
+function fetchJSON(url,ms){
+  return new Promise(function(resolve,reject){
+    var done=false,ctrl=null;
+    try{ctrl=new AbortController();}catch(e){}
+    var t=setTimeout(function(){if(!done){done=true;try{ctrl&&ctrl.abort();}catch(e){}reject(new Error('timeout'));}},ms||6000);
+    fetch(url,ctrl?{signal:ctrl.signal,cache:'no-store'}:{cache:'no-store'})
+      .then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json();})
+      .then(function(d){if(done)return;done=true;clearTimeout(t);resolve(d);})
+      .catch(function(e){if(done)return;done=true;clearTimeout(t);reject(e);});
+  });
+}
+function validIP(ip){return typeof ip==='string'&&/^([0-9]{1,3}\.){3}[0-9]{1,3}$|^[0-9a-fA-F:]+:[0-9a-fA-F:]*$/.test(ip.trim());}
+// Each provider returns a normalised record, or throws if the reply is unusable (e.g. a rate-limit message)
+// Optional: paste a free ipapi.is API key here (sign up at ipapi.is, 1,000 lookups/day) to get its
+// VPN / proxy / Tor / datacentre flags. Without a key the survey still logs IPs and uses the other checks.
+var IPAPI_IS_KEY='';
+var IP_PROVIDERS=[
+  {name:'ipapi.is',url:'https://api.ipapi.is/'+(IPAPI_IS_KEY?'?key='+encodeURIComponent(IPAPI_IS_KEY):''),parse:function(d){
+    if(!d||!validIP(d.ip))throw new Error('bad');
+    var flags=[];['is_vpn','is_proxy','is_tor','is_datacenter'].forEach(function(k){if(d[k]===true)flags.push(k.replace('is_',''));});
+    if(d.egress_service)flags.push('egress service: '+(d.egress_service.service||d.egress_service.name||d.egress_service.type||'private relay'));
+    if(d.vpn&&d.vpn.service)flags.push('vpn service: '+d.vpn.service);
+    if(d.company&&d.company.type==='hosting')flags.push('hosting company');
+    if(d.asn&&d.asn.type==='hosting')flags.push('hosting ASN');
+    return {ip:d.ip,country:(d.location&&d.location.country)||'',region:(d.location&&d.location.state)||'',city:(d.location&&d.location.city)||'',
+      isp:(d.company&&d.company.name)||(d.asn&&d.asn.org)||'',orgs:[d.company&&d.company.name,d.asn&&d.asn.org,d.asn&&d.asn.descr,d.datacenter&&d.datacenter.datacenter],
+      tz:(d.location&&d.location.timezone)||'',flags:flags};
+  }},
+  {name:'ipapi.co',url:'https://ipapi.co/json/',parse:function(d){
+    if(!d||d.error||!validIP(d.ip))throw new Error('bad');
+    return {ip:d.ip,country:d.country_name||'',region:d.region||'',city:d.city||'',isp:d.org||'',orgs:[d.org,d.asn],tz:d.timezone||'',flags:[]};
+  }},
+  {name:'ipwho.is',url:'https://ipwho.is/',parse:function(d){
+    if(!d||d.success===false||!validIP(d.ip))throw new Error('bad');
+    var c=d.connection||{},sec=d.security||{},flags=[];
+    ['vpn','proxy','tor','hosting','relay','anonymous'].forEach(function(k){if(sec[k]===true)flags.push(k);});
+    return {ip:d.ip,country:d.country||'',region:d.region||'',city:d.city||'',isp:c.isp||c.org||'',orgs:[c.isp,c.org,c.domain],tz:(d.timezone&&d.timezone.id)||'',flags:flags};
+  }},
+  {name:'freeipapi',url:'https://free.freeipapi.com/api/json',parse:function(d){
+    if(!d||!validIP(d.ipAddress))throw new Error('bad');
+    var flags=[];if(d.isProxy===true)flags.push('proxy');
+    var tz=Array.isArray(d.timeZones)?d.timeZones[0]:(d.timeZone||'');
+    return {ip:d.ipAddress,country:d.countryName||'',region:d.regionName||'',city:d.cityName||'',isp:d.asnOrganization||'',orgs:[d.asnOrganization],tz:/\//.test(tz)?tz:'',flags:flags};
+  }},
+  {name:'geojs',url:'https://get.geojs.io/v1/ip/geo.json',parse:function(d){
+    if(!d||!validIP(d.ip))throw new Error('bad');
+    return {ip:d.ip,country:d.country||'',region:d.region||'',city:d.city||'',isp:d.organization_name||'',orgs:[d.organization_name,d.organization],tz:d.timezone||'',flags:[]};
+  }},
+  {name:'ipify',url:'https://api64.ipify.org?format=json',parse:function(d){
+    if(!d||!validIP(d.ip))throw new Error('bad');
+    return {ip:d.ip,country:'',region:'',city:'',isp:'',orgs:[],tz:'',flags:[]};
+  }}
+];
+// UTC offset (minutes) of an IANA timezone right now, or null if the browser can't tell
+function tzOffsetMinutes(tz){
+  try{
+    var parts=new Intl.DateTimeFormat('en-US',{timeZone:tz,timeZoneName:'longOffset'}).formatToParts(new Date());
+    var n=(parts.filter(function(x){return x.type==='timeZoneName';})[0]||{}).value||'';
+    if(n==='GMT')return 0;
+    var m=n.match(/GMT([+-])(\d{1,2}):?(\d{2})?/);if(!m)return null;
+    return (m[1]==='-'?-1:1)*(parseInt(m[2],10)*60+parseInt(m[3]||'0',10));
+  }catch(e){return null;}
+}
+function lookupIP(){
+  return Promise.all(IP_PROVIDERS.map(function(pr){
+    return fetchJSON(pr.url,6000).then(function(d){var r=pr.parse(d);r.src=pr.name;return r;}).catch(function(){return null;});
+  })).then(function(res){
+    var ok=res.filter(Boolean);
+    if(!ok.length){state.ipData={ip:'unavailable',country:'',city:'',isp:'',is_vpn:false,signals:'IP lookup failed (all services blocked or offline)'};return;}
+    // Prefer the first provider (in list order) that has full location data
+    var main=ok.filter(function(r){return r.country;})[0]||ok[0];
+    var signals=[];
+    ok.forEach(function(r){r.flags.forEach(function(f){signals.push(r.src+': '+f);});});
+    // Keyword match across every ISP / org / ASN name returned
+    var names=[];ok.forEach(function(r){(r.orgs||[]).concat([r.isp]).forEach(function(n){if(n&&typeof n==='string'&&names.indexOf(n)===-1)names.push(n);});});
+    var hits=[];names.forEach(function(n){var low=n.toLowerCase();VPN_KEYWORDS.forEach(function(kw){if(low.indexOf(kw)!==-1&&hits.indexOf(kw)===-1)hits.push(kw);});});
+    if(hits.length)signals.push('network name matches: '+hits.join(', ')+' ('+names.join(' | ')+')');
+    // Browser timezone vs IP-location timezone
+    var browserTz='';try{browserTz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}
+    var browserOff=-new Date().getTimezoneOffset();
+    var ipTz=(ok.filter(function(r){return r.tz;})[0]||{}).tz||'';
+    // Only counted when the two timezones are in different regions (e.g. Australia vs Europe), because
+    // mobile IPs are often placed in the wrong city/state within the same country.
+    var region=function(z){return (z||'').indexOf('/')>0?z.split('/')[0]:'';};
+    if(ipTz&&region(browserTz)&&region(ipTz)&&region(browserTz)!==region(ipTz)){var ipOff=tzOffsetMinutes(ipTz);if(ipOff!==null&&Math.abs(ipOff-browserOff)>=60)signals.push('timezone mismatch: device '+(browserTz||('UTC'+(browserOff>=0?'+':'')+browserOff/60))+' vs IP '+ipTz);}
+    state.ipData={ip:main.ip,country:main.country,region:main.region,city:main.city,isp:main.isp||((ok.filter(function(r){return r.isp;})[0]||{}).isp)||'',
+      is_vpn:signals.length>0,signals:signals.join('; ')};
+  });
+}
+state.ipPromise=lookupIP();
+
+// ---- Survey clock ----
+// StartDate = when "Begin" is pressed. The clock stops on the details page; if the participant
+// goes back from there it resumes (time spent paused on the details page is not counted), and
+// stops again when they return. EndDate = the last time they reached the details page.
+// Formats a timestamp as Los Angeles local time (PST/PDT, daylight saving handled) "YYYY-MM-DD HH:MM:SS"
+function fmtLA(ms){
+  if(!ms)return '';
+  try{
+    var parts={};new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23'})
+      .formatToParts(new Date(ms)).forEach(function(x){parts[x.type]=x.value;});
+    var hh=parts.hour==='24'?'00':parts.hour;
+    if(parts.year&&parts.month&&parts.day&&hh)return parts.year+'-'+parts.month+'-'+parts.day+' '+hh+':'+parts.minute+':'+parts.second;
+  }catch(e){}
+  // Fallback if the browser lacks timezone data: US rules — PDT (UTC-7) from 2nd Sunday of March 2am to 1st Sunday of November 2am, else PST (UTC-8)
+  var y=new Date(ms).getUTCFullYear();
+  function nthSunday(month,n){var d=new Date(Date.UTC(y,month,1));var first=(7-d.getUTCDay())%7;return Date.UTC(y,month,1+first+7*(n-1));}
+  var dstStart=nthSunday(2,2)+10*3600*1000, dstEnd=nthSunday(10,1)+9*3600*1000; // 2am PST = 10:00 UTC; 2am PDT = 09:00 UTC
+  var off=(ms>=dstStart&&ms<dstEnd)?-7:-8;
+  return new Date(ms+off*3600*1000).toISOString().slice(0,19).replace('T',' ');
+}
+// Reading-time measures (seconds, 1 decimal), used as an attention / data-quality proxy:
+//   homescreentime     = time on the welcome screen, from page load until "Begin" is pressed
+//   NPIinstructiontime = time on the NPI instructions page
+// Only counts while the tab is visible (a link opened in a background tab doesn't inflate it).
+// If the participant comes back to either screen, the extra time is added.
+var READ_TIMERS={welcome:'homeMs',instructions:'npiInstrMs'};
+var readKey=null,readStart=null;
+function readTimerStop(){if(readKey&&readStart!==null){state[readKey]=(state[readKey]||0)+(Date.now()-readStart);}readKey=null;readStart=null;}
+function readTimerStart(){
+  readTimerStop();
+  var sc=SCREENS[state.currentPage];var key=sc&&READ_TIMERS[sc.type];
+  if(key&&document.visibilityState!=='hidden'){readKey=key;readStart=Date.now();}
+}
+document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')readTimerStop();else readTimerStart();});
+
+function clockArriveDetails(){var now=Date.now();state.endTime=now;state.pauseStart=now;}
+function clockLeaveDetails(){if(state.pauseStart){state.pausedMs=(state.pausedMs||0)+(Date.now()-state.pauseStart);}state.pauseStart=null;state.endTime=null;}
+
+function slideClass(){return state.slideDir==='bwd'?'slide-bwd':'slide-fwd';}
+function progressBar(idx){
+  var sc=SCREENS[idx];var sec=(sc&&typeof sc.section==='number')?sc.section:0;
+  var lst=SECTIONS[sec]||[];var pos=lst.indexOf(idx);
+  var segs='';
+  for(var j=0;j<3;j++){
+    var fill=(j<sec)?100:((j===sec&&lst.length)?Math.round(((pos+1)/lst.length)*100):0);
+    segs+='<div class="progress-seg"><div class="progress-seg-fill" style="width:'+fill+'%"></div></div>';
+  }
+  return '<div class="progress-container"><div class="progress-top"><span class="progress-title">'+esc(SURVEY_TITLE)+'</span><span class="progress-pct">Part '+(sec+1)+' of 3</span></div><div class="progress-seg-track">'+segs+'</div></div>';
+}
+function navRow(){return '<div class="nav-row"><button class="btn-nav btn-back" id="btnBack">Back</button><button class="btn-nav btn-next" id="btnNext">Continue</button></div>';}
+
+function render(){
+  var app=document.getElementById('app');
+  var idx=state.currentPage;var s=SCREENS[idx];var html='';
+  document.body.classList.remove('on-results');
+  if(s.type==='welcome')html=renderWelcome();
+  else if(s.type==='dilemma')html=renderDilemma(s.d);
+  else if(s.type==='likert')html=renderLikert(s);
+  else if(s.type==='pps')html=renderPPSItem(s.item);
+  else if(s.type==='npi')html=renderNPIItem(s.item);
+  else if(s.type==='instructions')html=renderInstructions(s);
+  else if(s.type==='demographics')html=renderDemographics();
+  else if(s.type==='thankyou')html=renderThankYou();
+  readTimerStart(); // stops any running reading timer, starts one if this is the welcome / instructions screen
+  app.innerHTML=html;attachListeners();
+  if(s.type==='pps')setTimeout(unifyStmtWrap,0);
+  if(s.type==='pps')setTimeout(fitPPSInstruction,0);
+  if(s.type==='thankyou'){clearProgress();} // stays on the thank-you page (no automatic redirect)
+  // Start each new screen at the top, but never re-snap afterwards — a delayed
+  // reset would fight the user while they scroll toward the answers/button.
+  window.scrollTo(0,0);
+  saveProgress();
+}
+
+function fitPPSInstruction(){
+  var pin=document.getElementById('ppsInstrPin');if(!pin)return;
+  pin.classList.remove('in-flow');
+  var hdr=document.querySelector('.progress-container');
+  var limit=hdr?hdr.getBoundingClientRect().bottom+8:8;
+  if(pin.getBoundingClientRect().top<limit)pin.classList.add('in-flow');
+}
+window.addEventListener('resize',function(){var s=SCREENS[state.currentPage];if(s&&s.type==='pps')fitPPSInstruction();});
+
+function renderWelcome(){
+  return '<div class="hero">'
+    +'<div class="hero-eyebrow">A Research Study</div>'
+    +'<div class="hero-rule"></div>'
+    +'<h1 class="hero-puzzle">A Murder Puzzle</h1>'
+    +'<div class="hero-divider"></div>'
+    +'<div class="hero-card">'
+    +'<p class="hero-sub">This study examines the link between personality and how people respond to moral dilemmas.</p>'
+    +'<p class="hero-sub" style="margin-top:0.6rem;font-size:.95rem">You\u2019ll be presented with 3 moral dilemmas. After each dilemma you will take a short, validated personality scale. There are no right or wrong answers \u2014 please just answer honestly.</p>'
+    +'<p class="hero-sub" style="margin-top:0.7rem"><strong>All responses are anonymous.</strong></p>'
+    +'<p class="hero-sub" style="margin-top:0.5rem;font-size:.85rem;opacity:.85">If on desktop, you can press <strong>Enter</strong> to move to the next question.</p>'
+    +'</div>'
+    +'<button class="btn-hero" id="btnStart">Begin</button>'
+    +'</div>';
+}
+
+function renderDilemma(d){
+  var sel=state.responses[d.id];
+  var cards='';
+  d.options.forEach(function(opt,i){
+    var c=(sel===i)?' selected':'';
+    cards+='<div class="stmt-card'+c+'" data-item="'+d.id+'" data-value="'+i+'" role="button" tabindex="0" aria-pressed="'+(sel===i?'true':'false')+'">'
+      +'<div class="stmt-indicator" aria-hidden="true"><svg class="stmt-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-8.5"/></svg></div>'
+      +'<div class="stmt-text">'+esc(opt)+'</div></div>';
+  });
+  var scenario=esc(d.scenario).replace(/\n/g,'<br>');
+  var html='<div class="dilemma-screen">';
+  html+=progressBar(state.currentPage);
+  html+='<div class="dilemma-body">';
+  html+='<div class="dilemma-title">'+esc(d.title)+'</div>';
+  html+='<div class="dilemma-scenario">'+scenario+'</div>';
+  html+='<div class="dilemma-prompt" id="dilemmaPrompt">What do you choose?</div>';
+  html+='<div class="stmt-stack">'+cards+'</div>';
+  html+='</div>';
+  html+=navRow();
+  html+='</div>';
+  return html;
+}
+
+function renderLikert(s){
+  var item=s.item,anchors=s.anchors,base=s.base||0,sel=state.responses[item.id];
+  var btns='';
+  anchors.forEach(function(lbl,i){
+    var v=base+i;
+    var c=(sel===v)?' selected':'';
+    btns+='<div class="scale-btn'+c+'" data-item="'+item.id+'" data-value="'+v+'" role="button" tabindex="0" aria-pressed="'+(sel===v?'true':'false')+'"><span class="scale-lbl">'+esc(lbl)+'</span></div>';
+  });
+  var html='<div class="survey-shell">';
+  html+=progressBar(state.currentPage);
+  html+='<div class="item-area '+slideClass()+'"><div class="item-center">';
+  html+='<div class="item-float-top"><div class="error-msg" id="itemError">Please choose an option before continuing.</div></div>';
+  html+='<div class="item-anchor"><div class="item-question">'+esc(item.text)+'</div><div class="scale-wrap likert">'+btns+'</div></div>';
+  html+='</div></div>';
+  html+=navRow();
+  html+='</div>';
+  return html;
+}
+
+function renderPPSItem(item){
+  var sel=state.responses[item.id];
+  var cards='';
+  item.statements.forEach(function(st){
+    var c=(sel===st.v)?' selected':'';
+    cards+='<div class="stmt-card'+c+'" data-item="'+item.id+'" data-value="'+st.v+'" role="button" tabindex="0" aria-pressed="'+(sel===st.v?'true':'false')+'">'
+      +'<div class="stmt-indicator" aria-hidden="true"><svg class="stmt-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-8.5"/></svg></div>'
+      +'<div class="stmt-text">'+esc(st.t)+'</div></div>';
+  });
+  var isFirst=(state.currentPage===FIRST_PPS);
+  var instrHtml=isFirst?'<div class="pps-instruction">'+esc(PPS_INSTRUCTION_MAIN)+'</div>':'';
+  var noteHtml=item.note?'<div class="item-note">'+esc(item.note)+'</div>':'';
+  var html='<div class="survey-shell">';
+  html+=progressBar(state.currentPage);
+  html+='<div class="item-area '+slideClass()+'"><div class="item-center">';
+  html+='<div class="item-float-top"><div class="error-msg" id="itemError">Please choose a statement before continuing.</div>'+noteHtml+'</div>';
+  // Instruction is pinned above the options (out of flow) so the first item's options sit in the same place as every other item
+  html+='<div class="stmt-anchor">'+(instrHtml?'<div class="pps-instr-pin" id="ppsInstrPin">'+instrHtml+'</div>':'')+'<div class="stmt-stack">'+cards+'</div></div>';
+  html+='</div></div>';
+  html+=navRow();
+  html+='</div>';
+  return html;
+}
+
+function renderNPIItem(item){
+  // Forced choice: stored as 0 = A, 1 = B
+  var sel=state.responses[item.id];
+  var btns='';
+  [item.a,item.b].forEach(function(txt,i){
+    var c=(sel===i)?' selected':'';
+    btns+='<div class="scale-btn'+c+'" data-item="'+item.id+'" data-value="'+i+'" role="button" tabindex="0" aria-pressed="'+(sel===i?'true':'false')+'"><span class="scale-lbl">'+esc(txt)+'</span></div>';
+  });
+  var html='<div class="survey-shell">';
+  html+=progressBar(state.currentPage);
+  html+='<div class="item-area '+slideClass()+'"><div class="item-center">';
+  html+='<div class="item-float-top"><div class="error-msg" id="itemError">Please choose a statement before continuing.</div></div>';
+  html+='<div class="item-anchor"><div class="scale-wrap likert npi-wrap">'+btns+'</div></div>';
+  html+='</div></div>';
+  html+=navRow();
+  html+='</div>';
+  return html;
+}
+
+function renderInstructions(s){
+  var html='<div class="survey-shell">';
+  html+=progressBar(state.currentPage);
+  html+='<div class="item-area '+slideClass()+'"><div class="item-center">';
+  var pts='';(s.points||[]).forEach(function(t){pts+='<li>'+esc(t)+'</li>';});
+  html+='<div class="instr-plain"><p class="instr-text">'+esc(s.text)+'</p>'+(pts?'<ul class="instr-list">'+pts+'</ul>':'')+'</div>';
+  html+='</div></div>';
+  html+=navRow();
+  html+='</div>';
+  return html;
+}
+
+function renderDemographics(){
+  var countries=['Afghanistan','Albania','Algeria','Andorra','Angola','Antigua and Barbuda','Argentina','Armenia','Australia','Austria','Azerbaijan','Bahamas','Bahrain','Bangladesh','Barbados','Belarus','Belgium','Belize','Benin','Bhutan','Bolivia','Bosnia and Herzegovina','Botswana','Brazil','Brunei','Bulgaria','Burkina Faso','Burundi','Cabo Verde','Cambodia','Cameroon','Canada','Central African Republic','Chad','Chile','China','Colombia','Comoros','Congo (DRC)','Congo (Republic)','Costa Rica','Croatia','Cuba','Cyprus','Czech Republic','Denmark','Djibouti','Dominica','Dominican Republic','Ecuador','Egypt','El Salvador','Equatorial Guinea','Eritrea','Estonia','Eswatini','Ethiopia','Fiji','Finland','France','Gabon','Gambia','Georgia','Germany','Ghana','Greece','Grenada','Guatemala','Guinea','Guinea-Bissau','Guyana','Haiti','Honduras','Hungary','Iceland','India','Indonesia','Iran','Iraq','Ireland','Israel','Italy','Ivory Coast','Jamaica','Japan','Jordan','Kazakhstan','Kenya','Kiribati','Kosovo','Kuwait','Kyrgyzstan','Laos','Latvia','Lebanon','Lesotho','Liberia','Libya','Liechtenstein','Lithuania','Luxembourg','Madagascar','Malawi','Malaysia','Maldives','Mali','Malta','Marshall Islands','Mauritania','Mauritius','Mexico','Micronesia','Moldova','Monaco','Mongolia','Montenegro','Morocco','Mozambique','Myanmar','Namibia','Nauru','Nepal','Netherlands','New Zealand','Nicaragua','Niger','Nigeria','North Korea','North Macedonia','Norway','Oman','Pakistan','Palau','Palestine','Panama','Papua New Guinea','Paraguay','Peru','Philippines','Poland','Portugal','Qatar','Romania','Russia','Rwanda','Saint Kitts and Nevis','Saint Lucia','Saint Vincent and the Grenadines','Samoa','San Marino','Sao Tome and Principe','Saudi Arabia','Senegal','Serbia','Seychelles','Sierra Leone','Singapore','Slovakia','Slovenia','Solomon Islands','Somalia','South Africa','South Korea','South Sudan','Spain','Sri Lanka','Sudan','Suriname','Sweden','Switzerland','Syria','Taiwan','Tajikistan','Tanzania','Thailand','Timor-Leste','Togo','Tonga','Trinidad and Tobago','Tunisia','Turkey','Turkmenistan','Tuvalu','Uganda','Ukraine','United Arab Emirates','United Kingdom','United States','Uruguay','Uzbekistan','Vanuatu','Vatican City','Venezuela','Vietnam','Yemen','Zambia','Zimbabwe'];
+  var csel=state.demoFields.country||'';
+  var opts='<option value=""'+(csel===''?' selected':'')+'>Select your country\u2026</option>';
+  countries.forEach(function(c){opts+='<option value="'+c+'"'+(csel===c?' selected':'')+'>'+c+'</option>'});
+  var ynA=state.demoYN.accurate,ynC=state.demoYN.consent;
+  function ynBtn(grp,val){var cur=(grp==='accurate'?ynA:ynC);var on=(cur===val)?' selected':'';return '<button type="button" class="yn-btn'+on+'" data-yn="'+grp+'" data-val="'+val+'">'+(val==='YES'?'Yes':'No')+'</button>';}
+  var html='<div class="demo-screen"><div class="demo-card">';
+  html+='<h2>Almost done!</h2>';
+  html+='<p class="demo-sub">Just a couple of quick details before you finish.</p>';
+  html+='<div class="demo-error" id="demoError"></div>';
+  html+='<div class="demo-field"><label>Age</label><input type="number" id="demoAge" min="13" max="120" placeholder="Enter your age" value="'+esc(state.demoFields.age||'')+'"></div>';
+  var gsel=state.demoFields.gender||'';var genders=['Male','Female','Non-binary','Other','Prefer not to say'];var gopts='<option value=""'+(gsel===''?' selected':'')+'>Select your gender\u2026</option>';genders.forEach(function(g){gopts+='<option value="'+g+'"'+(gsel===g?' selected':'')+'>'+g+'</option>'});
+  html+='<div class="demo-field"><label>Gender</label><select id="demoGender">'+gopts+'</select></div>';
+  html+='<div class="demo-field"><label>Country</label><select id="demoCountry">'+opts+'</select></div>';
+  html+='<div class="demo-field"><label>Were your answers accurate?</label><div class="yn-row">'+ynBtn('accurate','YES')+ynBtn('accurate','NO')+'</div></div>';
+  html+='<div class="demo-field"><label>Do you consent to your responses being used for this study?</label><div class="yn-row">'+ynBtn('consent','YES')+ynBtn('consent','NO')+'</div></div>';
+  html+='<button class="demo-submit" id="btnDemoSubmit">Submit</button>';
+  html+='<button type="button" class="demo-back" id="btnBack">Back</button>';
+  html+='</div></div>';
+  return html;
+}
+
+function renderThankYou(){
+  return '<div class="thankyou-screen"><div class="thankyou-card">'
+    +'<div class="thankyou-check">\u2713</div>'
+    +'<h1>Thank you for participating!</h1>'
+    +'<div class="thankyou-id">Your Respondent ID<span id="responseId">'+esc(state.respondentId)+'</span></div>'
+    +'</div></div>';
+}
+
+/* ---- Wrap-unity helper for the 5-statement PPS cards (all sizes) ---- */
+function unifyStmtWrap(){
+  var stack=document.querySelector('.stmt-stack');
+  if(!stack)return;
+  var texts=stack.querySelectorAll('.stmt-text');
+  if(texts.length<2)return;
+  for(var i=0;i<texts.length;i++){texts[i].style.maxWidth=''}
+  var firstStyle=window.getComputedStyle(texts[0]);
+  var probe=document.createElement('span');
+  probe.style.cssText='position:absolute;top:-9999px;left:-9999px;visibility:hidden;white-space:nowrap;display:inline-block';
+  probe.style.fontFamily=firstStyle.fontFamily;probe.style.fontSize=firstStyle.fontSize;probe.style.fontWeight=firstStyle.fontWeight;probe.style.letterSpacing=firstStyle.letterSpacing;
+  document.body.appendChild(probe);
+  var widths=[];
+  for(var jj=0;jj<texts.length;jj++){probe.textContent=texts[jj].textContent;widths.push(probe.offsetWidth);}
+  document.body.removeChild(probe);
+  var available=texts[0].clientWidth;
+  if(!available)return;
+  var longest=Math.max.apply(null,widths);
+  if(longest<=available)return;
+  var targetLines=Math.ceil(longest/available);
+  var wprobe=document.createElement('span');
+  wprobe.style.cssText='position:absolute;top:-9999px;left:-9999px;visibility:hidden;display:inline-block;white-space:normal;text-wrap:balance';
+  wprobe.style.fontFamily=firstStyle.fontFamily;wprobe.style.fontSize=firstStyle.fontSize;wprobe.style.fontWeight=firstStyle.fontWeight;wprobe.style.lineHeight=firstStyle.lineHeight;wprobe.style.letterSpacing=firstStyle.letterSpacing;
+  document.body.appendChild(wprobe);
+  var lineHeight=parseFloat(firstStyle.lineHeight)||(parseFloat(firstStyle.fontSize)*1.5);
+  function maxLinesAt(w){var ml=0;for(var ii=0;ii<texts.length;ii++){wprobe.style.maxWidth=w+'px';wprobe.textContent=texts[ii].textContent;var lines=Math.round(wprobe.offsetHeight/lineHeight);if(lines>ml)ml=lines;}return ml;}
+  var lo=Math.ceil(longest/targetLines);var hi=available;var best=hi;
+  if(maxLinesAt(hi)>targetLines){targetLines=maxLinesAt(hi);}
+  while(lo<hi){var mid=(lo+hi)>>1;if(mid<=0)break;if(maxLinesAt(mid)<=targetLines){hi=mid;best=mid}else{lo=mid+1}}
+  document.body.removeChild(wprobe);
+  var uniform=Math.min(best,available);
+  for(var m=0;m<texts.length;m++){texts[m].style.maxWidth=uniform+'px'}
+}
+window.addEventListener('resize',function(){var s=SCREENS[state.currentPage];if(s&&s.type==='pps')unifyStmtWrap();});
+
+// ---- Navigation ----
+// Per-item time accumulates across visits (going back to an item adds to its time rather than replacing it)
+function recordPageTime(){var st=state.pageStartTimes[state.currentPage];if(st)state.pageTimes[state.currentPage]=Math.round(((state.pageTimes[state.currentPage]||0)+(Date.now()-st)/1000)*10)/10;state.pageStartTimes[state.currentPage]=Date.now();}
+function showItemError(msg){var err=document.getElementById('itemError');if(err){err.textContent=msg;err.classList.add('visible');}}
+
+function currentResponseId(s){
+  if(s.type==='dilemma')return s.d.id;
+  if(s.type==='likert'||s.type==='pps'||s.type==='npi')return s.item.id;
+  return null;
+}
+
+function goNext(){
+  var idx=state.currentPage;var s=SCREENS[idx];
+  var rid=currentResponseId(s);
+  if(rid!==null && state.responses[rid]===undefined){
+    if(s.type==='dilemma'){var dp=document.getElementById('dilemmaPrompt');if(dp)dp.classList.add('error-state');}
+    else showItemError((s.type==='pps'||s.type==='npi')?'Please choose a statement before continuing.':'Please choose an option before continuing.');
+    return;
+  }
+  if(!state.startTime)state.startTime=Date.now();
+  recordPageTime();
+  state.slideDir='fwd';
+  state.currentPage++;
+  if(state.currentPage===DEMO_INDEX)clockArriveDetails();
+  state.pageStartTimes[state.currentPage]=Date.now();
+  render();
+}
+function goBack(){
+  if(state.currentPage<=0)return;
+  if(state.currentPage===DEMO_INDEX)clockLeaveDetails();
+  recordPageTime();
+  state.slideDir='bwd';
+  state.currentPage--;
+  state.pageStartTimes[state.currentPage]=Date.now();
+  render();
+}
+
+// Auto-advance (NPI + LSRP): move to the next item immediately on selection
+function scheduleAdvance(){goNext();}
+
+function attachListeners(){
+  var bs=document.getElementById('btnStart');
+  if(bs)bs.addEventListener('click',function(){goNext();});
+  var bn=document.getElementById('btnNext');
+  if(bn)bn.addEventListener('click',function(){goNext();});
+  var bb=document.getElementById('btnBack');
+  if(bb)bb.addEventListener('click',function(){goBack();});
+  var bds=document.getElementById('btnDemoSubmit');
+  if(bds)bds.addEventListener('click',function(){submitFinal();});
+
+  // demographics error clearing
+  var demoAge=document.getElementById('demoAge');
+  if(demoAge)demoAge.addEventListener('input',function(){state.demoFields.age=demoAge.value;saveProgress();var e=document.getElementById('demoError');if(e)e.classList.remove('visible')});
+  var demoCountry=document.getElementById('demoCountry');
+  if(demoCountry)demoCountry.addEventListener('change',function(){state.demoFields.country=demoCountry.value;saveProgress();var e=document.getElementById('demoError');if(e)e.classList.remove('visible')});
+  var dg=document.getElementById('demoGender');
+  if(dg)dg.addEventListener('change',function(){state.demoFields.gender=dg.value;saveProgress();var e=document.getElementById('demoError');if(e)e.classList.remove('visible')});
+
+  // yes/no choice buttons
+  document.querySelectorAll('.yn-btn').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var grp=btn.getAttribute('data-yn'),val=btn.getAttribute('data-val');
+      state.demoYN[grp]=val;
+      document.querySelectorAll('.yn-btn[data-yn="'+grp+'"]').forEach(function(o){o.classList.toggle('selected',o===btn);});
+      saveProgress();
+      var e=document.getElementById('demoError');if(e)e.classList.remove('visible');
+    });
+  });
+
+  // selectable option cards / likert buttons
+  document.querySelectorAll('.scale-btn, .stmt-card').forEach(function(opt){
+    opt.addEventListener('click',function(){
+      var itemId=opt.dataset.item,value=parseInt(opt.dataset.value);
+      var autoAdv=!!(SCREENS[state.currentPage]&&SCREENS[state.currentPage].auto);
+      if(state.responses[itemId]===value&&autoAdv){scheduleAdvance();return;}
+      if(state.responses[itemId]===value){
+        delete state.responses[itemId];
+        opt.classList.remove('selected');
+        if(opt.hasAttribute('aria-pressed'))opt.setAttribute('aria-pressed','false');
+        saveProgress();
+        return;
+      }
+      state.responses[itemId]=value;
+      document.querySelectorAll('.scale-btn[data-item="'+itemId+'"], .stmt-card[data-item="'+itemId+'"]').forEach(function(o){
+        o.classList.remove('selected');
+        if(o.hasAttribute('aria-pressed'))o.setAttribute('aria-pressed','false');
+      });
+      opt.classList.add('selected');
+      if(opt.hasAttribute('aria-pressed'))opt.setAttribute('aria-pressed','true');
+      var err=document.getElementById('itemError');if(err)err.classList.remove('visible');var dp=document.getElementById('dilemmaPrompt');if(dp)dp.classList.remove('error-state');
+      saveProgress();
+      // Prevent mobile browser from auto-scrolling the selected element into view
+      if(document.activeElement&&document.activeElement.blur)document.activeElement.blur();
+      if(autoAdv)scheduleAdvance();
+    });
+    opt.addEventListener('keydown',function(e){
+      if(e.key===' '){e.preventDefault();e.stopPropagation();opt.click();}
+    });
+    // Prevent mobile browser from auto-scrolling the card into view on tap
+    opt.addEventListener('touchend',function(){try{if(document.activeElement&&document.activeElement.blur)document.activeElement.blur();}catch(e){}},{passive:true});
+  });
+}
+
+// ---- Swipe navigation (mobile): swipe left = forward, swipe right = back ----
+// Forward is gated by goNext(), which blocks (and shows an error) if the
+// current question has not been answered. Back always works.
+(function(){
+  var sx=0,sy=0,st=0,tracking=false;
+  var SWIPE_TYPES={dilemma:1,likert:1,pps:1,npi:1,instructions:1};
+  function canSwipe(){var s=SCREENS[state.currentPage];if(window.visualViewport&&window.visualViewport.scale>1.01)return false;return !!(s&&SWIPE_TYPES[s.type]);}
+  document.addEventListener('touchstart',function(e){
+    if(e.touches.length!==1){tracking=false;return;}
+    var t=e.touches[0];sx=t.clientX;sy=t.clientY;st=Date.now();tracking=true;
+  },{passive:true});
+  document.addEventListener('touchend',function(e){
+    if(!tracking)return;tracking=false;
+    if(!canSwipe())return;
+    var t=e.changedTouches&&e.changedTouches[0];if(!t)return;
+    var dx=t.clientX-sx,dy=t.clientY-sy,dt=Date.now()-st;
+    var adx=Math.abs(dx),ady=Math.abs(dy);
+    if(adx<60)return;            // not far enough to count as a swipe
+    if(adx<ady*1.5)return;       // too vertical — likely a scroll, ignore
+    if(dt>800)return;            // too slow to be an intentional swipe
+    if(dx<0)goNext();            // swipe left  -> forward (gated by answer)
+    else goBack();               // swipe right -> back
+  },{passive:true});
+})();
+
+// ---- Submission ----
+function submitToSheet(payload,callback){
+  if(!GOOGLE_SCRIPT_URL||GOOGLE_SCRIPT_URL==='YOUR_GOOGLE_SCRIPT_URL_HERE'){callback();return;}
+  try{
+    var iframe=document.createElement('iframe');iframe.name='sf_'+Date.now();iframe.style.display='none';document.body.appendChild(iframe);
+    var form=document.createElement('form');form.method='POST';form.action=GOOGLE_SCRIPT_URL;form.target=iframe.name;form.style.display='none';
+    var input=document.createElement('input');input.type='hidden';input.name='payload';input.value=JSON.stringify(payload);
+    form.appendChild(input);document.body.appendChild(form);form.submit();
+    setTimeout(function(){try{document.body.removeChild(form);document.body.removeChild(iframe)}catch(e){}callback()},2000);
+  }catch(err){callback();}
+}
+
+function buildPayload(demos){
+  var p={};
+  // Times are Los Angeles local time (PST/PDT)
+  p.StartDate=fmtLA(state.startTime);
+  p.EndDate=fmtLA(state.endTime);
+  p.respondent_id=state.respondentId;
+  p.section='complete';
+  var tt=(state.endTime&&state.startTime)?Math.round((state.endTime-state.startTime-(state.pausedMs||0))/100)/10:0;
+  p.total_time_seconds=tt;
+  p.homescreentime=Math.round((state.homeMs||0)/100)/10;
+  p.NPIinstructiontime=Math.round((state.npiInstrMs||0)/100)/10;
+  p.ip_address=state.ipData.ip||'';
+  p.ip_country=state.ipData.country||'';
+  p.ip_city=state.ipData.city||'';
+  p.isp=state.ipData.isp||'';
+  p.is_vpn_or_proxy=state.ipData.is_vpn?'YES':'NO';
+  p.vpn_signals=state.ipData.signals||'';
+  p.demo_age=demos&&demos.age!==undefined?demos.age:'';
+  p.demo_gender=demos?demos.gender||'':'';
+  p.demo_country=demos?demos.country||'':'';
+  p.demo_accurate=demos?demos.accurate||'':'';
+  p.demo_consent=demos?demos.consent||'':'';
+  // Moral dilemmas (recorded option index 0/1)
+  DILEMMAS.forEach(function(d){p[d.id]=state.responses[d.id]!==undefined?state.responses[d.id]:'';});
+  // Scale 1: NPI-16 (forced choice) — each item scored 1 = narcissistic response, 0 = non-narcissistic; total = sum (0-16)
+  var npiTotal=0,npiDone=0;
+  NPI_ITEMS.forEach(function(it){
+    var r=state.responses[it.id];
+    if(r===0||r===1){var letter=r===0?'A':'B';var sc=(letter===it.key)?1:0;p[it.id]=sc;npiDone++;npiTotal+=sc;}
+    else p[it.id]='';
+  });
+  p.NPI_total=(npiDone===NPI_ITEMS.length)?npiTotal:'';
+  // Scale 2: PPS grouped by factor, test order within factor (0-4)
+  ['INT','AFF','LIF'].forEach(function(f){
+    S1_ITEMS.forEach(function(it){if(it.factor===f)p[it.id]=state.responses[it.id]!==undefined?state.responses[it.id]:'';});
+  });
+  // Scale 3: LSRP grouped by factor, numbered order within factor (1-4, raw — reverse-keyed items not recoded)
+  ['Egocentric','Callous','Antisocial','Validity'].forEach(function(f){
+    LSRP_ITEMS.filter(function(it){return it.factor===f;}).sort(function(a,b){return a.order-b.order;})
+      .forEach(function(it){p[it.id]=state.responses[it.id]!==undefined?state.responses[it.id]:'';});
+  });
+  // Per-item time columns, in overall test order
+  ANSWERABLE.forEach(function(si){
+    var s=SCREENS[si];var id=(s.type==='dilemma')?s.d.id:s.item.id;
+    p['Time'+id]=state.pageTimes[si]||0;
+  });
+  p.auth_token=generateToken(state.respondentId);
+  return p;
+}
+
+function autofillDemo(){
+  var a=document.getElementById('demoAge');if(a)a.value='30';
+  var g=document.getElementById('demoGender');if(g)g.value='Prefer not to say';
+  var c=document.getElementById('demoCountry');if(c)c.value='United States';
+  state.demoYN={accurate:'YES',consent:'YES'};
+}
+
+function submitFinal(){
+  var ageEl=document.getElementById('demoAge');
+  var genderEl=document.getElementById('demoGender');
+  var countryEl=document.getElementById('demoCountry');
+  var age=ageEl?ageEl.value.trim():'';
+  var gender=genderEl?genderEl.value:'';
+  var country=countryEl?countryEl.value:'';
+  var accurate=state.demoYN.accurate;
+  var consent=state.demoYN.consent;
+  var errEl=document.getElementById('demoError');
+  if(!age||isNaN(parseInt(age))||parseInt(age)<13||parseInt(age)>120){if(errEl){errEl.textContent='Please enter a valid age (13\u2013120).';errEl.classList.add('visible')}return;}
+  if(!gender){if(errEl){errEl.textContent='Please select your gender.';errEl.classList.add('visible')}return;}
+  if(!country){if(errEl){errEl.textContent='Please select your country.';errEl.classList.add('visible')}return;}
+  if(!accurate){if(errEl){errEl.textContent='Please answer whether your answers were accurate.';errEl.classList.add('visible')}return;}
+  if(!consent){if(errEl){errEl.textContent='Please answer the consent question.';errEl.classList.add('visible')}return;}
+  if(errEl)errEl.classList.remove('visible');
+  var overlay=document.getElementById('submitting');
+  var spin=document.getElementById('spinnerText');if(spin)spin.textContent='Submitting your responses\u2026';
+  if(overlay)overlay.classList.add('visible');
+  var demos={age:parseInt(age),gender:gender,country:country,accurate:accurate,consent:consent};
+  // Make sure the IP lookup has finished (max 8s) so the IP is never missing from the submission
+  var waited=false;
+  function go(){if(waited)return;waited=true;
+  var payload=buildPayload(demos);
+  submitToSheet(payload,function(){
+    if(overlay)overlay.classList.remove('visible');
+    state.slideDir='fwd';
+    state.currentPage=THANKYOU_INDEX;
+    render();
+  });
+  }
+  setTimeout(go,8000);
+  if(state.ipPromise&&state.ipPromise.then)state.ipPromise.then(go,go);else go();
+}
+
+// ---- Keyboard ----
+// "+" : auto-answer current item with 0 and advance (test shortcut).
+// Enter : activate the primary button on the current screen.
+document.addEventListener('keydown',function(e){
+  if(e.ctrlKey||e.metaKey||e.altKey)return;
+  if(e.key!=='Enter'||e.shiftKey)return;
+  var tag=(e.target&&e.target.tagName)||'';
+  if(tag==='TEXTAREA')return;
+  if(tag==='BUTTON')return;
+  var primaryIds=['btnStart','btnNext','btnDemoSubmit','btnContinue'];
+  for(var i=0;i<primaryIds.length;i++){var btn=document.getElementById(primaryIds[i]);if(btn){e.preventDefault();btn.click();return;}}
+});
+
+// ---- Silent progress saving (survives reloads, app backgrounding, and iOS tab eviction) ----
+// Stored locally on this device only; cleared automatically once the survey is submitted.
+var SAVE_KEY='pps_progress_v11';
+var SAVE_TTL=12*60*60*1000; // forget abandoned sessions after 12h
+function saveProgress(){
+  try{
+    var sc=SCREENS[state.currentPage];
+    if(!sc||sc.type==='thankyou')return;       // never persist the finished state
+    if(state.currentPage<=0)return;            // nothing meaningful to save yet
+    localStorage.setItem(SAVE_KEY,JSON.stringify({
+      t:Date.now(), currentPage:state.currentPage, responses:state.responses,
+      demoYN:state.demoYN, demoFields:state.demoFields, startTime:state.startTime,
+      endTime:state.endTime, homeMs:state.homeMs, npiInstrMs:state.npiInstrMs, pausedMs:state.pausedMs, pauseStart:state.pauseStart, pageTimes:state.pageTimes, pageStartTimes:state.pageStartTimes,
+      respondentId:state.respondentId
+    }));
+  }catch(e){}
+}
+function clearProgress(){try{localStorage.removeItem(SAVE_KEY);}catch(e){}}
+function restoreProgress(){
+  try{
+    var raw=localStorage.getItem(SAVE_KEY); if(!raw)return false;
+    var b=JSON.parse(raw); if(!b||typeof b.currentPage!=='number')return false;
+    if(SAVE_TTL&&b.t&&(Date.now()-b.t)>SAVE_TTL){clearProgress();return false;}
+    if(b.currentPage<=0||b.currentPage>=THANKYOU_INDEX){clearProgress();return false;}
+    state.currentPage=b.currentPage;
+    state.responses=b.responses||{};
+    state.demoYN=b.demoYN||{accurate:null,consent:null};
+    state.demoFields=b.demoFields||{age:'',gender:'',country:''};
+    state.startTime=b.startTime||null;
+    state.endTime=b.endTime||null;
+    state.pausedMs=b.pausedMs||0;
+    state.homeMs=b.homeMs||0;
+    state.npiInstrMs=b.npiInstrMs||0;
+    state.pauseStart=b.pauseStart||null;
+    state.pageTimes=b.pageTimes||[];
+    state.pageStartTimes=b.pageStartTimes||[];
+    if(b.respondentId)state.respondentId=b.respondentId;
+    state.pageStartTimes[state.currentPage]=Date.now(); // time-on-page restarts on resume
+    return true;
+  }catch(e){return false;}
+}
+// Flush a save the moment the tab is hidden or unloaded (the iOS eviction safety net).
+window.addEventListener('pagehide',saveProgress);
+window.addEventListener('beforeunload',saveProgress);
+document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')saveProgress();});
+
+restoreProgress();
+render();
+</script>
+
+
+</body></html>
